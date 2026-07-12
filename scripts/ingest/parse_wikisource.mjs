@@ -6,8 +6,12 @@
  * - 括号感知全文扫描：深度 0 的换行为分段点；{{*|…}}（可跨行）为行内注释
  *   （裴注），记录其在正文中的字符锚点
  * - [[A|B]] → B，[[A]] → A，{{YL|显示|年份}} → 显示，其余模板丢弃
- * - 实体：按词典（sources/entities/<book>.json）在原文中自动匹配区间
+ * - 实体：按词典（sources/entities/<book>.json）在原文中自动匹配区间；
+ *   词典项带 id 时输出 refId，并抽取本名条目（带 bio）生成 persons.json
  * - 翻译：从 sources/translations/<chapterId>.json（段序号 → 白话）合入
+ * - 句级对齐（v2）：从 sources/alignments/<chapterId>.json（段序号 → [{o,t}] 句子
+ *   字符串对）按顺序子串定位换算为区间，校验拼接完整性，失败即报错
+ * - 扫描全部章节生成 person-index.json（人物出现位置）
  *
  * 用法：node scripts/ingest/parse_wikisource.mjs [--draft]
  */
@@ -27,7 +31,7 @@ const CHAPTERS = [
   },
   {
     book: 'sanguozhi',
-    chapterId: 'shu-05',
+    chapterId: 'shu-35',
     title: '蜀書五·諸葛亮傳',
     source: 'sanguozhi35.txt',
     range: null,
@@ -129,6 +133,32 @@ function parseDocument(raw) {
   return paragraphs
 }
 
+/**
+ * 句级对齐：句子字符串对 → 字符区间。
+ * 每句必须在游标处（允许先跳过空白）与文本精确匹配，保证无错位。
+ */
+function alignSentences(text, parts, where, label) {
+  const spans = []
+  let cursor = 0
+  for (const [i, part] of parts.entries()) {
+    while (cursor < text.length && /\s/.test(text[cursor])) cursor++
+    if (!text.startsWith(part, cursor)) {
+      throw new Error(
+        `${where} ${label} 第 ${i + 1} 句定位失败：\n  期望「${part.slice(0, 40)}…」\n  实际「${text.slice(cursor, cursor + 40)}…」`,
+      )
+    }
+    spans.push([cursor, cursor + part.length])
+    cursor += part.length
+  }
+  while (cursor < text.length && /\s/.test(text[cursor])) cursor++
+  if (cursor !== text.length) {
+    throw new Error(
+      `${where} ${label} 句对未覆盖全文，剩余「${text.slice(cursor, cursor + 40)}…」`,
+    )
+  }
+  return spans
+}
+
 /** 实体词典自动标注：长词优先、不重叠 */
 function markEntities(original, dict) {
   const found = []
@@ -144,11 +174,12 @@ function markEntities(original, dict) {
       for (let i = at; i < end; i++) if (taken[i]) overlap = true
       if (!overlap) {
         for (let i = at; i < end; i++) taken[i] = true
-        const { name, type, birth, death, note } = entry
+        const { name, type, birth, death, note, id } = entry
         const entity = { type, span: [at, end], name }
         if (birth !== undefined) entity.birth = birth
         if (death !== undefined) entity.death = death
         if (note !== undefined) entity.note = note
+        if (id !== undefined) entity.refId = id
         found.push(entity)
       }
       from = end
@@ -159,6 +190,10 @@ function markEntities(original, dict) {
 
 const draftMode = process.argv.includes('--draft')
 
+/** book id → 已生成章节列表，用于 person-index / persons 输出 */
+const bookChapters = new Map()
+const bookDicts = new Map()
+
 for (const cfg of CHAPTERS) {
   const raw = readFileSync(path.join(ROOT, 'sources/wikisource', cfg.source), 'utf8')
   let parsed = parseDocument(raw)
@@ -168,25 +203,44 @@ for (const cfg of CHAPTERS) {
   const translations = existsSync(translationsPath)
     ? JSON.parse(readFileSync(translationsPath, 'utf8'))
     : {}
+  const alignmentsPath = path.join(ROOT, 'sources/alignments', `${cfg.chapterId}.json`)
+  const alignments = existsSync(alignmentsPath)
+    ? JSON.parse(readFileSync(alignmentsPath, 'utf8'))
+    : {}
   const dictPath = path.join(ROOT, 'sources/entities', `${cfg.book}.json`)
   const dict = existsSync(dictPath) ? JSON.parse(readFileSync(dictPath, 'utf8')) : []
+  bookDicts.set(cfg.book, dict)
 
+  let missingAlignment = 0
   const paragraphs = parsed.map((entry, idx) => {
+    const key = String(idx + 1)
     const p = {
       id: `${cfg.chapterId}-p${String(idx + 1).padStart(3, '0')}`,
       original: entry.original,
-      translation: translations[String(idx + 1)] ?? '',
+      translation: translations[key] ?? '',
     }
     if (entry.annotations.length) p.annotations = entry.annotations
     const entities = markEntities(entry.original, dict)
     if (entities.length) p.entities = entities
+
+    const pairs = alignments[key]
+    if (pairs?.length) {
+      const oSpans = alignSentences(p.original, pairs.map((s) => s.o), p.id, '原文')
+      const tSpans = alignSentences(p.translation, pairs.map((s) => s.t), p.id, '白话')
+      p.sentences = oSpans.map((o, i) => ({ o, t: tSpans[i] }))
+    } else {
+      missingAlignment++
+    }
     return p
   })
 
   if (draftMode) {
     console.log(`\n===== ${cfg.chapterId} ${cfg.title}（${paragraphs.length} 段）=====`)
     for (const p of paragraphs) {
-      console.log(`\n[${p.id}]（注 ${p.annotations?.length ?? 0} 条）`)
+      const gaps = []
+      if (!p.translation) gaps.push('缺翻译')
+      if (!p.sentences) gaps.push('缺对齐')
+      console.log(`\n[${p.id}]（注 ${p.annotations?.length ?? 0} 条${gaps.length ? '，' + gaps.join('，') : ''}）`)
       console.log(p.original)
     }
     continue
@@ -199,8 +253,68 @@ for (const cfg of CHAPTERS) {
     path.join(outDir, `${cfg.chapterId}.json`),
     JSON.stringify(chapter, null, 1),
   )
+  if (!bookChapters.has(cfg.book)) bookChapters.set(cfg.book, [])
+  bookChapters.get(cfg.book).push(chapter)
+
   const missing = paragraphs.filter((p) => !p.translation).length
   console.log(
-    `${cfg.chapterId}: ${paragraphs.length} 段，注释 ${paragraphs.reduce((n, p) => n + (p.annotations?.length ?? 0), 0)} 条，缺翻译 ${missing} 段`,
+    `${cfg.chapterId}: ${paragraphs.length} 段，注释 ${paragraphs.reduce((n, p) => n + (p.annotations?.length ?? 0), 0)} 条，缺翻译 ${missing} 段，缺对齐 ${missingAlignment} 段`,
   )
+}
+
+// ---------- persons.json 与 person-index.json ----------
+
+for (const [book, chapters] of bookChapters) {
+  const dict = bookDicts.get(book) ?? []
+
+  // 人物库：按 id 分组，本名条目（带 bio）为准
+  const byId = new Map()
+  for (const entry of dict) {
+    if (!entry.id) continue
+    if (!byId.has(entry.id)) byId.set(entry.id, [])
+    byId.get(entry.id).push(entry)
+  }
+  const persons = []
+  for (const [id, entries] of byId) {
+    const canonical = entries.filter((e) => e.bio)
+    if (canonical.length !== 1) {
+      throw new Error(`人物 id「${id}」应恰好有一条带 bio 的本名条目，实际 ${canonical.length} 条`)
+    }
+    const { name, zi, birth, death, native, bio } = canonical[0]
+    const person = { id, name }
+    if (zi !== undefined) person.zi = zi
+    if (birth !== undefined) person.birth = birth
+    if (death !== undefined) person.death = death
+    if (native !== undefined) person.native = native
+    person.bio = bio
+    persons.push(person)
+  }
+  writeFileSync(
+    path.join(ROOT, 'public/data', book, 'persons.json'),
+    JSON.stringify(persons, null, 1),
+  )
+
+  // 出现位置索引：每人每段最多一条
+  const index = {}
+  for (const chapter of chapters) {
+    for (const p of chapter.paragraphs) {
+      const seen = new Set()
+      for (const e of p.entities ?? []) {
+        if (!e.refId || seen.has(e.refId)) continue
+        seen.add(e.refId)
+        if (!index[e.refId]) index[e.refId] = []
+        index[e.refId].push({
+          chapterId: chapter.id,
+          chapterTitle: chapter.title,
+          paragraphId: p.id,
+          preview: p.original.slice(0, 28) + (p.original.length > 28 ? '…' : ''),
+        })
+      }
+    }
+  }
+  writeFileSync(
+    path.join(ROOT, 'public/data', book, 'person-index.json'),
+    JSON.stringify(index, null, 1),
+  )
+  console.log(`${book}: 人物 ${persons.length} 人，索引 ${Object.keys(index).length} 人`)
 }

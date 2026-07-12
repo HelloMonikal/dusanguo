@@ -1,7 +1,9 @@
 /**
- * 书籍数据包校验（schema v1，规范见 docs/schema.md）
+ * 书籍数据包校验（schema v2，规范见 docs/schema.md）
  * 检查项：结构完整性、段落 id 唯一、实体 span 越界/重叠、
- * 注释锚点越界、注释层引用存在、toc 章节引用存在、缺失翻译
+ * 注释锚点越界、注释层引用存在、toc 章节引用存在、缺失翻译；
+ * v2：句级对齐区间合法性与覆盖、实体不跨句、refId 引用存在、
+ *     persons id 唯一、person-index 与人物库一致
  * 用法：node scripts/validate.mjs
  */
 import { readFileSync, readdirSync, existsSync } from 'node:fs'
@@ -36,9 +38,21 @@ for (const entry of books) {
   }
 
   const config = readJson(path.join(bookDir, 'book.json'))
-  if (config.schemaVersion !== 1) err(`book.json schemaVersion 应为 1，实际 ${config.schemaVersion}`)
+  if (![1, 2].includes(config.schemaVersion)) err(`book.json schemaVersion 应为 1 或 2，实际 ${config.schemaVersion}`)
   if (config.id !== entry.id) err(`book.json.id (${config.id}) 与书目索引 (${entry.id}) 不一致`)
   const layerIds = new Set((config.annotationLayers ?? []).map((l) => l.id))
+
+  // v2：人物库
+  const personsPath = path.join(bookDir, 'persons.json')
+  const persons = existsSync(personsPath) ? readJson(personsPath) : []
+  const personIds = new Set()
+  for (const person of persons) {
+    if (!person.id) err(`persons.json 存在缺 id 的条目（name=${person.name}）`)
+    if (personIds.has(person.id)) err(`persons.json id 重复：${person.id}`)
+    personIds.add(person.id)
+    if (!person.name) err(`persons.json[${person.id}] 缺 name`)
+    if (!person.bio) err(`persons.json[${person.id}] 缺 bio`)
+  }
 
   const toc = readJson(path.join(bookDir, 'toc.json'))
   const tocChapterIds = []
@@ -91,11 +105,43 @@ for (const entry of books) {
         const [s, t] = e.span
         if (!(s >= 0 && t <= len && s < t)) err(`${where}: 实体 ${e.name} span [${s},${t}) 越界（原文长 ${len}）`)
         else if (p.original.slice(s, t) !== e.name) err(`${where}: 实体 span 文字与 name 不符（${e.name}）`)
+        if (e.refId && !personIds.has(e.refId)) err(`${where}: 实体 ${e.name} 的 refId「${e.refId}」不在 persons.json 中`)
         spans.push([s, t, e.name])
       }
       spans.sort((a, b) => a[0] - b[0])
       for (let i = 1; i < spans.length; i++) {
         if (spans[i][0] < spans[i - 1][1]) err(`${where}: 实体重叠 ${spans[i - 1][2]} / ${spans[i][2]}`)
+      }
+
+      // v2：句级对齐
+      if (p.sentences) {
+        const tLen = p.translation.length
+        const checkSide = (side, textLen, label) => {
+          let prevEnd = 0
+          for (const [i, span] of p.sentences.map((sp) => sp[side]).entries()) {
+            const [s, t] = span
+            if (!(s >= 0 && t <= textLen && s < t)) {
+              err(`${where}: 句 ${i + 1} ${label}区间 [${s},${t}) 越界（长 ${textLen}）`)
+              continue
+            }
+            if (s < prevEnd) err(`${where}: 句 ${i + 1} ${label}区间与前句重叠`)
+            const gap = (side === 'o' ? p.original : p.translation).slice(prevEnd, s)
+            if (gap.trim() !== '') err(`${where}: 句 ${i + 1} ${label}区间前有未覆盖文字「${gap.slice(0, 20)}」`)
+            prevEnd = t
+          }
+          const tail = (side === 'o' ? p.original : p.translation).slice(prevEnd)
+          if (tail.trim() !== '') err(`${where}: ${label}末尾有未覆盖文字「${tail.slice(0, 20)}」`)
+        }
+        checkSide('o', len, '原文')
+        checkSide('t', tLen, '白话')
+
+        // 实体不得跨句边界
+        for (const e of p.entities ?? []) {
+          const inSentence = p.sentences.some(
+            (sp) => e.span[0] >= sp.o[0] && e.span[1] <= sp.o[1],
+          )
+          if (!inSentence) err(`${where}: 实体 ${e.name} [${e.span}] 跨句边界`)
+        }
       }
 
       for (const a of p.annotations ?? []) {
@@ -107,6 +153,20 @@ for (const entry of books) {
     }
     if (missingTranslation > 0) warn(`${file}: ${missingTranslation} 段缺白话翻译`)
     console.log(`  ${file}: ${chapter.paragraphs.length} 段 ✓`)
+  }
+
+  // v2：person-index 一致性
+  const indexPath = path.join(bookDir, 'person-index.json')
+  if (existsSync(indexPath)) {
+    const personIndex = readJson(indexPath)
+    for (const [pid, occurrences] of Object.entries(personIndex)) {
+      if (!personIds.has(pid)) err(`person-index 引用的人物不存在：${pid}`)
+      for (const occ of occurrences) {
+        if (!chapterIds.has(occ.chapterId)) err(`person-index[${pid}] 引用的章节不存在：${occ.chapterId}`)
+        if (!seenParagraphIds.has(occ.paragraphId)) err(`person-index[${pid}] 引用的段落不存在：${occ.paragraphId}`)
+      }
+    }
+    console.log(`  persons: ${persons.length} 人，index: ${Object.keys(personIndex).length} 人 ✓`)
   }
 }
 

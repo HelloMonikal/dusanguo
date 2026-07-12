@@ -1,6 +1,6 @@
 # 书籍数据包 Schema 规范
 
-**当前版本：v1**（对应 `book.json` 的 `schemaVersion: 1`）
+**当前版本：v2**（对应 `book.json` 的 `schemaVersion: 2`；阅读器向后兼容 v1——v2 新字段均为可选）
 
 TS 类型定义：`src/lib/schema.ts`（与本文档同步维护；改动 schema 必须同时更新两处并在文末记录变更）。
 
@@ -13,7 +13,11 @@ public/data/
     book.json                # 书配置
     toc.json                 # 目录树
     chapters/<chapterId>.json  # 章节（按需加载）
+    persons.json             # v2：人物库
+    person-index.json        # v2：人物出现位置索引（生成物）
 ```
+
+**章节 id 规范**：`<部>-<两位全书卷号>`，如 `wei-01`（魏书卷一）、`shu-35`（蜀书五 = 全书卷三十五）。
 
 ## books.json —— 书目索引
 
@@ -81,15 +85,56 @@ public/data/
       ],
       "entities": [            // 可选；span 之间不允许重叠
         { "type": "person", "span": [0, 2], "name": "太祖",
-          "birth": 155, "death": 220, "note": "曹操，字孟德" },
+          "birth": 155, "death": 220, "note": "曹操，字孟德",
+          "refId": "caocao" }, // v2：指向 persons.json，有则人名可点击
         { "type": "place", "span": [6, 8], "name": "沛國" }
       ],
-      "tags": [],              // 预留：分类标签（M2）
-      "topics": []             // 预留：主题 id（M2）
+      "sentences": [           // v2 可选：句级对齐（原文区间 ↔ 白话区间）
+        { "o": [0, 30], "t": [0, 42] },
+        { "o": [30, 52], "t": [42, 78] }
+      ],
+      "tags": [],              // 预留：分类标签
+      "topics": []             // 预留：主题 id
     }
   ]
 }
 ```
+
+### sentences 约束（v2）
+
+- `o` 依阅读顺序排列、互不重叠，拼接（允许跳过空白）完整覆盖 original；`t` 同理对 translation
+- 实体 span 不得跨句边界（校验器强制）
+- 缺省时 UI 回退到段级悬停联动
+
+## persons.json —— 人物库（v2）
+
+```jsonc
+[
+  {
+    "id": "zhugeliang",       // 全书唯一，小写拼音
+    "name": "諸葛亮",
+    "zi": "孔明",             // 表字（可选）
+    "birth": 181, "death": 234,
+    "native": "琅邪陽都（今山東沂南）",   // 籍贯（可选）
+    "bio": "三国时期蜀汉丞相…"           // 150–300 字简体生平
+  }
+]
+```
+
+实体词典（sources/entities）中同一人物的多个称谓（太祖/曹公/魏武帝）共用同一 `id`，其中**恰好一条**（本名条目）带 `bio` 等人物字段，由脚本抽取生成 persons.json。
+
+## person-index.json —— 出现位置索引（v2，生成物）
+
+```jsonc
+{
+  "zhugeliang": [
+    { "chapterId": "shu-35", "chapterTitle": "蜀書五·諸葛亮傳",
+      "paragraphId": "shu-35-p001", "preview": "諸葛亮字孔明，琅邪陽都人也…" }
+  ]
+}
+```
+
+由 ingest 脚本扫描全部章节生成（每人每段最多一条），**勿手改**。
 
 ### 字段约束
 
@@ -107,10 +152,14 @@ public/data/
 
 - `sources/wikisource/*.txt` —— 维基文库原始 wikitext
 - `sources/translations/<chapterId>.json` —— 段序号 → 白话翻译（人工/LLM 撰写）
-- `sources/entities/<bookId>.json` —— 实体词典（name/type/birth/death/note），由脚本在原文中自动匹配生成 span
+- `sources/alignments/<chapterId>.json` —— v2：段序号 → 句对数组 `[{ "o": "原文句", "t": "白话句" }]`。
+  **用句子字符串而非区间**（防手数偏移出错）；脚本按顺序子串定位换算区间并校验拼接完整性，定位失败即报错
+- `sources/entities/<bookId>.json` —— 实体词典（name/type/birth/death/note），由脚本在原文中自动匹配生成 span；
+  v2 增加人物字段：`id`（多称谓共用）、本名条目带 `zi`/`native`/`bio`
 
 `node scripts/ingest/parse_wikisource.mjs` 解析原文（分段、提取裴注并计算锚点）、合入翻译、匹配实体，输出章节 JSON。**不要手改生成物。**
 
 ## 变更记录
 
+- **v2**（2026-07-12）：新增 `Paragraph.sentences` 句级对齐、`Entity.refId`、`persons.json` 人物库、`person-index.json` 出现位置索引；章节 id 统一为全书卷号（`shu-05` → `shu-35`）。新字段全部可选，阅读器向后兼容 v1。
 - **v1**（2026-07-12）：初版。
