@@ -1,0 +1,16 @@
+[
+  {
+    "id": "wei",
+    "title": "魏書",
+    "children": [
+      { "id": "wei-01-node", "title": "卷一·武帝紀（節選）", "chapterId": "wei-01" }
+    ]
+  },
+  {
+    "id": "shu",
+    "title": "蜀書",
+    "children": [
+      { "id": "shu-05-node", "title": "卷三十五·諸葛亮傳", "chapterId": "shu-05" }
+    ]
+  }
+]
