@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { segmentParagraph } from '../src/lib/segment'
+import { segmentBySentence, segmentParagraph, splitTranslation } from '../src/lib/segment'
 import type { Paragraph } from '../src/lib/schema'
 
 const base = (over: Partial<Paragraph>): Paragraph => ({
@@ -84,5 +84,79 @@ describe('segmentParagraph', () => {
     const segs = segmentParagraph(p)
     expect(segs[segs.length - 1].kind).toBe('annotation')
     expect(joinText(segs)).toBe(p.original)
+  })
+})
+
+describe('segmentBySentence', () => {
+  // 原文「諸葛亮字孔明，琅邪陽都人也。」共 14 字：句1 [0,7)，句2 [7,14)
+  const aligned = (over: Partial<Paragraph> = {}): Paragraph =>
+    base({
+      translation: '诸葛亮字孔明，是琅邪郡阳都县人。',
+      sentences: [
+        { o: [0, 7], t: [0, 7] },
+        { o: [7, 14], t: [7, 16] },
+      ],
+      ...over,
+    })
+
+  it('无对齐数据时返回单组 si=-1', () => {
+    const groups = segmentBySentence(base({}))
+    expect(groups).toHaveLength(1)
+    expect(groups[0].si).toBe(-1)
+  })
+
+  it('按句边界分组且文本完整', () => {
+    const groups = segmentBySentence(aligned())
+    expect(groups.map((g) => g.si)).toEqual([0, 1])
+    const text = groups
+      .flatMap((g) => g.segments)
+      .map((s) => (s.kind === 'annotation' ? '' : s.text))
+      .join('')
+    expect(text).toBe('諸葛亮字孔明，琅邪陽都人也。')
+  })
+
+  it('实体嵌套在句内，不被句边界拆开', () => {
+    const groups = segmentBySentence(
+      aligned({
+        entities: [{ type: 'person', span: [0, 3], name: '諸葛亮' }],
+      }),
+    )
+    expect(groups[0].segments[0]).toMatchObject({ kind: 'entity', text: '諸葛亮' })
+    expect(groups[0].si).toBe(0)
+  })
+
+  it('段尾零宽注释归入最后一句', () => {
+    const groups = segmentBySentence(
+      aligned({
+        annotations: [{ layer: 'peizhu', anchor: [14, 14], text: '注' }],
+      }),
+    )
+    const last = groups[groups.length - 1]
+    expect(last.si).toBe(1)
+    expect(last.segments.some((s) => s.kind === 'annotation')).toBe(true)
+  })
+})
+
+describe('splitTranslation', () => {
+  it('无对齐数据时整段返回 si=-1', () => {
+    const parts = splitTranslation(base({ translation: '整段白话。' }))
+    expect(parts).toEqual([{ si: -1, text: '整段白话。' }])
+  })
+
+  it('按 t 区间切分并保留间隙', () => {
+    const p = base({
+      translation: '甲句。 乙句。',
+      sentences: [
+        { o: [0, 7], t: [0, 3] },
+        { o: [7, 14], t: [4, 7] },
+      ],
+    })
+    const parts = splitTranslation(p)
+    expect(parts).toEqual([
+      { si: 0, text: '甲句。' },
+      { si: -1, text: ' ' },
+      { si: 1, text: '乙句。' },
+    ])
+    expect(parts.map((x) => x.text).join('')).toBe(p.translation)
   })
 })

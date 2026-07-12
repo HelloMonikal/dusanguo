@@ -1,25 +1,32 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import SettingsPanel from '../components/SettingsPanel'
 import TocTree from '../components/TocTree'
 import ParagraphView from '../components/ParagraphView'
+import PersonCard from '../components/PersonCard'
 import {
   findTocPath,
   flattenChapters,
   loadBookConfig,
   loadChapter,
+  loadPersonIndex,
+  loadPersons,
   loadToc,
 } from '../lib/data'
-import type { BookConfig, Chapter, TocNode } from '../lib/schema'
+import type { BookConfig, Chapter, Person, PersonIndex, TocNode } from '../lib/schema'
 import { useFavorites, useReaderSettings, useReadingProgress } from '../lib/settings'
 
 export default function Reader() {
   const { bookId = '', chapterId } = useParams()
   const navigate = useNavigate()
+  const location = useLocation()
 
   const [config, setConfig] = useState<BookConfig | null>(null)
   const [toc, setToc] = useState<TocNode[] | null>(null)
   const [chapter, setChapter] = useState<Chapter | null>(null)
+  const [persons, setPersons] = useState<Person[]>([])
+  const [personIndex, setPersonIndex] = useState<PersonIndex>({})
+  const [openPersonId, setOpenPersonId] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [tocOpen, setTocOpen] = useState(true)
   const [settingsOpen, setSettingsOpen] = useState(false)
@@ -28,7 +35,7 @@ export default function Reader() {
   const { ids: favorites, toggle: toggleFavorite } = useFavorites()
   const [progress, setProgress] = useReadingProgress(bookId)
 
-  // 载入书配置与目录
+  // 载入书配置与目录（人物库缺失时静默降级为空）
   useEffect(() => {
     setConfig(null)
     setToc(null)
@@ -39,6 +46,8 @@ export default function Reader() {
       },
       (e: Error) => setError(e.message),
     )
+    loadPersons(bookId).then(setPersons)
+    loadPersonIndex(bookId).then(setPersonIndex)
   }, [bookId])
 
   const chapters = useMemo(() => (toc ? flattenChapters(toc) : []), [toc])
@@ -62,11 +71,27 @@ export default function Reader() {
       (data) => {
         setChapter(data)
         setProgress(chapterId)
-        window.scrollTo(0, 0)
       },
       (e: Error) => setError(e.message),
     )
   }, [bookId, chapterId, setProgress])
+
+  // 章节渲染后：有 hash 则滚动定位到目标段落，否则回到顶部
+  useEffect(() => {
+    if (!chapter) return
+    const targetId = location.hash.slice(1)
+    if (!targetId) {
+      window.scrollTo(0, 0)
+      return
+    }
+    requestAnimationFrame(() => {
+      const el = document.getElementById(targetId)
+      if (!el) return
+      el.scrollIntoView({ block: 'start' })
+      el.classList.add('flash')
+      setTimeout(() => el.classList.remove('flash'), 1800)
+    })
+  }, [chapter, location.hash])
 
   const tocPath = useMemo(
     () => (toc && chapterId ? (findTocPath(toc, chapterId) ?? []) : []),
@@ -79,6 +104,12 @@ export default function Reader() {
       ),
     [config],
   )
+
+  const personsById = useMemo(
+    () => new Map(persons.map((person) => [person.id, person])),
+    [persons],
+  )
+  const openPerson = openPersonId ? personsById.get(openPersonId) : undefined
 
   const chapterIndex = chapters.findIndex((c) => c.chapterId === chapterId)
   const prev = chapterIndex > 0 ? chapters[chapterIndex - 1] : null
@@ -136,6 +167,18 @@ export default function Reader() {
         />
       )}
 
+      {openPerson && (
+        <PersonCard
+          person={openPerson}
+          occurrences={personIndex[openPerson.id] ?? []}
+          onNavigate={(targetChapter, paragraphId) => {
+            setOpenPersonId(null)
+            navigate(`/book/${bookId}/${targetChapter}#${paragraphId}`)
+          }}
+          onClose={() => setOpenPersonId(null)}
+        />
+      )}
+
       <div className="reader-layout">
         {tocOpen && toc && (
           <aside className="reader-sidebar">
@@ -166,6 +209,9 @@ export default function Reader() {
                   settings={settings}
                   favorite={favorites.includes(paragraph.id)}
                   onToggleFavorite={toggleFavorite}
+                  onPersonClick={(refId) => {
+                    if (personsById.has(refId)) setOpenPersonId(refId)
+                  }}
                 />
               ))}
               <nav className="chapter-nav">

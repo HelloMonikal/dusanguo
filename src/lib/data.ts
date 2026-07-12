@@ -1,4 +1,11 @@
-import type { BookConfig, BookIndexEntry, Chapter, TocNode } from './schema'
+import type {
+  BookConfig,
+  BookIndexEntry,
+  Chapter,
+  Person,
+  PersonIndex,
+  TocNode,
+} from './schema'
 
 const DATA_BASE: string = import.meta.env.VITE_DATA_BASE ?? '/data'
 
@@ -22,6 +29,24 @@ export function loadToc(bookId: string): Promise<TocNode[]> {
 
 export function loadChapter(bookId: string, chapterId: string): Promise<Chapter> {
   return fetchJson(`/${bookId}/chapters/${chapterId}.json`)
+}
+
+/** v2：人物库；旧数据包无此文件时返回空数组 */
+export async function loadPersons(bookId: string): Promise<Person[]> {
+  try {
+    return await fetchJson(`/${bookId}/persons.json`)
+  } catch {
+    return []
+  }
+}
+
+/** v2：人物出现位置索引；旧数据包无此文件时返回空对象 */
+export async function loadPersonIndex(bookId: string): Promise<PersonIndex> {
+  try {
+    return await fetchJson(`/${bookId}/person-index.json`)
+  } catch {
+    return {}
+  }
 }
 
 /** 展平目录树中的叶子（章节）节点，按阅读顺序排列，用于 前/后 章节导航 */

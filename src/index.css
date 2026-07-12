@@ -298,10 +298,34 @@ a {
   border-radius: 4px;
 }
 
+/* 句级联动高亮 */
+
+.sentence {
+  border-radius: 3px;
+  transition: background 0.12s;
+}
+
+.sentence.s-hover {
+  background: #dbe9ff;
+  box-shadow: 0 1px 0 var(--accent);
+}
+
 /* 行内实体 */
 
 .entity-person {
   border-bottom: 1px solid #b9c8e8;
+}
+
+button.entity-person.clickable {
+  color: inherit;
+  cursor: pointer;
+  border-bottom: 1px solid var(--accent);
+}
+
+button.entity-person.clickable:hover {
+  color: var(--accent);
+  background: var(--accent-weak);
+  border-radius: 3px;
 }
 
 .lifespan {
@@ -370,6 +394,118 @@ a {
   padding-top: 0.5rem;
   border-top: 1px dashed var(--note-line);
   color: #6b6353;
+}
+
+/* ---------- 人物卡片 ---------- */
+
+.person-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 35;
+  background: rgba(15, 23, 42, 0.25);
+}
+
+.person-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 36;
+  width: min(440px, calc(100vw - 32px));
+  max-height: 78vh;
+  overflow-y: auto;
+  padding: 1.1rem 1.25rem 1.25rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.22);
+}
+
+.person-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.person-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.person-zi {
+  margin-left: 0.5rem;
+  color: var(--ink-weak);
+}
+
+.person-lifespan {
+  margin-left: 0.5rem;
+  color: var(--ink-weak);
+  font-size: 0.85rem;
+}
+
+.person-native {
+  margin-top: 0.3rem;
+  color: var(--ink-weak);
+  font-size: 0.85rem;
+}
+
+.person-bio {
+  margin: 0.75rem 0 0;
+  line-height: 1.9;
+  font-size: 0.93rem;
+}
+
+.person-occurrences {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.person-occ-title {
+  color: var(--ink-weak);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.person-occurrences ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.person-occurrences li button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+}
+
+.person-occurrences li button:hover {
+  background: var(--accent-weak);
+}
+
+.occ-chapter {
+  color: var(--accent);
+  font-size: 0.82rem;
+  margin-right: 0.6rem;
+  white-space: nowrap;
+}
+
+.occ-preview {
+  color: var(--ink-weak);
+  font-size: 0.85rem;
+}
+
+/* 跳转目标段落的闪烁提示 */
+
+.paragraph.flash {
+  animation: paragraph-flash 1.8s ease-out;
+}
+
+@keyframes paragraph-flash {
+  0% { background: #fff3d6; }
+  100% { background: transparent; }
 }
 
 /* ---------- 设置面板 ---------- */
