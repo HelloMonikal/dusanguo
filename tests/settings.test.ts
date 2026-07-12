@@ -36,4 +36,14 @@ describe('useFavorites', () => {
     act(() => result.current.toggle('a-p001'))
     expect(result.current.ids).toEqual([])
   })
+
+  it('刷新（重新挂载）后收藏仍是数组且可用', () => {
+    const { result } = renderHook(() => useFavorites())
+    act(() => result.current.toggle('a-p001'))
+
+    // 模拟页面刷新：新的 hook 实例从 localStorage 读取
+    const { result: fresh } = renderHook(() => useFavorites())
+    expect(Array.isArray(fresh.current.ids)).toBe(true)
+    expect(fresh.current.ids.includes('a-p001')).toBe(true)
+  })
 })

@@ -32,7 +32,19 @@ function readJson<T>(key: string, fallback: T): T {
   try {
     const raw = localStorage.getItem(key)
     if (raw === null) return fallback
-    return { ...fallback, ...JSON.parse(raw) }
+    const parsed = JSON.parse(raw)
+    // 仅普通对象与默认值合并（补新增字段）；数组等其他类型原样返回
+    if (
+      parsed !== null &&
+      typeof parsed === 'object' &&
+      !Array.isArray(parsed) &&
+      typeof fallback === 'object' &&
+      fallback !== null &&
+      !Array.isArray(fallback)
+    ) {
+      return { ...fallback, ...parsed }
+    }
+    return parsed as T
   } catch {
     return fallback
   }
