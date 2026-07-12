@@ -42,7 +42,8 @@
      "name": "諸葛亮",
      "birth": 181,
      "death": 234,
-     "note": "字孔明"
+     "note": "字孔明",
+     "refId": "zhugeliang"
     },
     {
      "type": "person",
@@ -53,7 +54,8 @@
      "name": "孔明",
      "birth": 181,
      "death": 234,
-     "note": "諸葛亮"
+     "note": "諸葛亮",
+     "refId": "zhugeliang"
     },
     {
      "type": "place",
@@ -197,7 +199,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "place",
@@ -225,7 +228,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -236,7 +240,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -247,7 +252,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -258,7 +264,8 @@
      "name": "孔明",
      "birth": 181,
      "death": 234,
-     "note": "諸葛亮"
+     "note": "諸葛亮",
+     "refId": "zhugeliang"
     },
     {
      "type": "person",
@@ -269,7 +276,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -280,7 +288,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -290,7 +299,8 @@
      ],
      "name": "董卓",
      "death": 192,
-     "note": "字仲穎"
+     "note": "字仲穎",
+     "refId": "dongzhuo"
     },
     {
      "type": "person",
@@ -300,7 +310,8 @@
      ],
      "name": "曹操",
      "birth": 155,
-     "death": 220
+     "death": 220,
+     "refId": "caocao"
     },
     {
      "type": "person",
@@ -310,7 +321,8 @@
      ],
      "name": "袁紹",
      "death": 202,
-     "note": "字本初"
+     "note": "字本初",
+     "refId": "yuanshao"
     },
     {
      "type": "person",
@@ -321,7 +333,7 @@
      "name": "孫權",
      "birth": 182,
      "death": 252,
-     "note": "字仲謀"
+     "refId": "sunquan"
     },
     {
      "type": "place",
@@ -376,7 +388,7 @@
      "name": "孫權",
      "birth": 182,
      "death": 252,
-     "note": "字仲謀"
+     "refId": "sunquan"
     },
     {
      "type": "place",
@@ -403,7 +415,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -413,7 +426,7 @@
      ],
      "name": "關羽",
      "death": 220,
-     "note": "字雲長"
+     "refId": "guanyu"
     },
     {
      "type": "person",
@@ -423,7 +436,7 @@
      ],
      "name": "張飛",
      "death": 221,
-     "note": "字益德"
+     "refId": "zhangfei"
     },
     {
      "type": "person",
@@ -434,7 +447,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -445,7 +459,8 @@
      "name": "孔明",
      "birth": 181,
      "death": 234,
-     "note": "諸葛亮"
+     "note": "諸葛亮",
+     "refId": "zhugeliang"
     }
    ]
   },
@@ -502,7 +517,8 @@
      "name": "曹公",
      "birth": 155,
      "death": 220,
-     "note": "曹操"
+     "note": "曹操",
+     "refId": "caocao"
     },
     {
      "type": "person",
@@ -513,7 +529,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -533,7 +550,8 @@
      "name": "曹公",
      "birth": 155,
      "death": 220,
-     "note": "曹操"
+     "note": "曹操",
+     "refId": "caocao"
     },
     {
      "type": "person",
@@ -544,7 +562,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -555,7 +574,8 @@
      "name": "曹公",
      "birth": 155,
      "death": 220,
-     "note": "曹操"
+     "note": "曹操",
+     "refId": "caocao"
     }
    ]
   },
@@ -591,7 +611,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "place",
@@ -627,7 +648,8 @@
      ],
      "name": "曹操",
      "birth": 155,
-     "death": 220
+     "death": 220,
+     "refId": "caocao"
     },
     {
      "type": "place",
@@ -655,7 +677,8 @@
      ],
      "name": "曹操",
      "birth": 155,
-     "death": 220
+     "death": 220,
+     "refId": "caocao"
     },
     {
      "type": "place",
@@ -674,7 +697,7 @@
      ],
      "name": "關羽",
      "death": 220,
-     "note": "字雲長"
+     "refId": "guanyu"
     },
     {
      "type": "person",
@@ -701,7 +724,8 @@
      ],
      "name": "曹操",
      "birth": 155,
-     "death": 220
+     "death": 220,
+     "refId": "caocao"
     },
     {
      "type": "place",
@@ -751,7 +775,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -762,7 +787,8 @@
      "name": "曹公",
      "birth": 155,
      "death": 220,
-     "note": "曹操"
+     "note": "曹操",
+     "refId": "caocao"
     },
     {
      "type": "person",
@@ -773,7 +799,8 @@
      "name": "曹公",
      "birth": 155,
      "death": 220,
-     "note": "曹操"
+     "note": "曹操",
+     "refId": "caocao"
     },
     {
      "type": "place",
@@ -792,7 +819,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "place",
@@ -873,7 +901,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -893,7 +922,7 @@
      ],
      "name": "關羽",
      "death": 220,
-     "note": "字雲長"
+     "refId": "guanyu"
     },
     {
      "type": "place",
@@ -912,7 +941,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "place",
@@ -930,7 +960,7 @@
      ],
      "name": "張飛",
      "death": 221,
-     "note": "字益德"
+     "refId": "zhangfei"
     },
     {
      "type": "person",
@@ -951,7 +981,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "place",
@@ -978,7 +1009,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "place",
@@ -997,7 +1029,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -1008,7 +1041,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -1019,7 +1053,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -1029,7 +1064,7 @@
      ],
      "name": "張飛",
      "death": 221,
-     "note": "字益德"
+     "refId": "zhangfei"
     }
    ]
   },
@@ -1057,7 +1092,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "place",
@@ -1096,7 +1132,8 @@
      "name": "先主",
      "birth": 161,
      "death": 223,
-     "note": "劉備，字玄德"
+     "note": "劉備，字玄德",
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -1901,7 +1938,7 @@
      "name": "孫權",
      "birth": 182,
      "death": 252,
-     "note": "字仲謀"
+     "refId": "sunquan"
     }
    ]
   },
@@ -1959,7 +1996,8 @@
      "name": "諸葛亮",
      "birth": 181,
      "death": 234,
-     "note": "字孔明"
+     "note": "字孔明",
+     "refId": "zhugeliang"
     }
    ]
   },
@@ -1985,7 +2023,7 @@
      "name": "劉備",
      "birth": 161,
      "death": 223,
-     "note": "字玄德"
+     "refId": "liubei"
     },
     {
      "type": "person",
@@ -1996,7 +2034,8 @@
      "name": "魏武帝",
      "birth": 155,
      "death": 220,
-     "note": "曹操"
+     "note": "曹操",
+     "refId": "caocao"
     },
     {
      "type": "place",
@@ -2024,7 +2063,7 @@
      "name": "孫權",
      "birth": 182,
      "death": 252,
-     "note": "字仲謀"
+     "refId": "sunquan"
     },
     {
      "type": "person",
@@ -2035,7 +2074,8 @@
      "name": "武帝",
      "birth": 155,
      "death": 220,
-     "note": "曹操"
+     "note": "曹操",
+     "refId": "caocao"
     },
     {
      "type": "place",
@@ -2159,7 +2199,7 @@
      "name": "孫權",
      "birth": 182,
      "death": 252,
-     "note": "字仲謀"
+     "refId": "sunquan"
     },
     {
      "type": "place",
@@ -2351,7 +2391,7 @@
      "name": "孫權",
      "birth": 182,
      "death": 252,
-     "note": "字仲謀"
+     "refId": "sunquan"
     },
     {
      "type": "person",
@@ -2437,7 +2477,8 @@
      "name": "諸葛亮",
      "birth": 181,
      "death": 234,
-     "note": "字孔明"
+     "note": "字孔明",
+     "refId": "zhugeliang"
     }
    ]
   }

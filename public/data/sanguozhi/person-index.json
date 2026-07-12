@@ -1,1 +1,258 @@
-{}
+{
+ "caocao": [
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p001",
+   "preview": "太祖武皇帝，沛國譙人也，姓曹，諱操，字孟德，漢相國參之後…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p002",
+   "preview": "太祖少機警，有權數，而任俠放蕩，不治行業，故世人未之奇也…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p004",
+   "preview": "頃之，冀州刺史王芬、南陽許攸、沛國周旌等連結豪傑，謀廢靈…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p005",
+   "preview": "金城邊章、韓遂殺刺史郡守以叛，衆十餘萬，天下騷動。徵太祖…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p006",
+   "preview": "初平元年春正月，後將軍袁術、冀州牧韓馥、豫州刺史孔伷、兖…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p007",
+   "preview": "二月，卓聞兵起，乃徙天子都長安。卓留屯洛陽，遂焚宮室。是…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p008",
+   "preview": "太祖到酸棗，諸軍兵十餘萬，日置酒高會，不圖進取。太祖責讓…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p009",
+   "preview": "太祖兵少，乃與夏侯惇等詣揚州募兵，刺史陳溫、丹楊太守周昕…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p011",
+   "preview": "袁紹與韓馥謀立幽州牧劉虞爲帝，太祖拒之。紹又甞得一玉印，…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p003",
+   "preview": "劉表長子琦，亦深器亮。表受後妻之言，愛少子琮，不悅於琦。…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p004",
+   "preview": "先主至於夏口，亮曰：「事急矣，請奉命求救於孫將軍。」時權…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p033",
+   "preview": "亮少有逸眾之才，英霸之器，身長八尺，容貌甚偉，時人異焉。…"
+  }
+ ],
+ "yuanshao": [
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p005",
+   "preview": "金城邊章、韓遂殺刺史郡守以叛，衆十餘萬，天下騷動。徵太祖…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p006",
+   "preview": "初平元年春正月，後將軍袁術、冀州牧韓馥、豫州刺史孔伷、兖…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p011",
+   "preview": "袁紹與韓馥謀立幽州牧劉虞爲帝，太祖拒之。紹又甞得一玉印，…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  }
+ ],
+ "dongzhuo": [
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p005",
+   "preview": "金城邊章、韓遂殺刺史郡守以叛，衆十餘萬，天下騷動。徵太祖…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p007",
+   "preview": "二月，卓聞兵起，乃徙天子都長安。卓留屯洛陽，遂焚宮室。是…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  }
+ ],
+ "zhugeliang": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p001",
+   "preview": "諸葛亮字孔明，琅邪陽都人也。漢司隸校尉諸葛豐後也。父圭，…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p032",
+   "preview": "臣壽等言：臣前在著作郎，侍中領中書監濟北侯臣荀勖、中書令…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p040",
+   "preview": "評曰：諸葛亮之為相國也，撫百姓，示儀軌，約官職，從權制，…"
+  }
+ ],
+ "liubei": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p003",
+   "preview": "劉表長子琦，亦深器亮。表受後妻之言，愛少子琮，不悅於琦。…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p004",
+   "preview": "先主至於夏口，亮曰：「事急矣，請奉命求救於孫將軍。」時權…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p005",
+   "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p006",
+   "preview": "章武三年春，先主於永安病篤，召亮於成都，屬以後事，謂亮曰…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p033",
+   "preview": "亮少有逸眾之才，英霸之器，身長八尺，容貌甚偉，時人異焉。…"
+  }
+ ],
+ "sunquan": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p027",
+   "preview": "傳運第十三　　　與孫權書第十四　與諸葛謹書第十五"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p033",
+   "preview": "亮少有逸眾之才，英霸之器，身長八尺，容貌甚偉，時人異焉。…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p037",
+   "preview": "喬字伯松，亮兄瑾之第二子也，本字仲慎。與兄元遜俱有名於時…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p039",
+   "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
+  }
+ ],
+ "guanyu": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p004",
+   "preview": "先主至於夏口，亮曰：「事急矣，請奉命求救於孫將軍。」時權…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p005",
+   "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  }
+ ],
+ "zhangfei": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p005",
+   "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  }
+ ]
+}
