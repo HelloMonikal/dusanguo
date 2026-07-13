@@ -15,6 +15,11 @@
   "title": "蜀書",
   "children": [
    {
+    "id": "shu-32-node",
+    "title": "卷三十二·先主傳",
+    "chapterId": "shu-32"
+   },
+   {
     "id": "shu-35-node",
     "title": "卷三十五·諸葛亮傳",
     "chapterId": "shu-35"

@@ -35,6 +35,7 @@ function cleanInline(text) {
   return text
     .replace(/\[\[[Cc]ategory:[^\]]*\]\]/g, '')
     .replace(/\[\[(?:[^\][|]*\|)?([^\][]*)\]\]/g, '$1')
+    .replace(/-\{([^}]*)\}-/g, '$1') // 维基繁简转换标记 -{乾}- → 乾
     .replace(/<\/?(?:u|blockquote|onlyinclude|poem)>/g, '')
     .replace(/'''?/g, '')
     .replace(/^[　\s]+|[　\s]+$/g, '')
@@ -57,15 +58,39 @@ function findTemplateEnd(text, open) {
 }
 
 /**
+ * 把 {{quote|…}} 模板展开为独立段落（内容原样保留，含嵌套 {{*|}} 裴注）。
+ * 用于劝进表、诏策等成篇引文。
+ */
+function unwrapQuoteTemplates(text) {
+  let result = ''
+  let i = 0
+  while (i < text.length) {
+    if (text.startsWith('{{quote|', i)) {
+      const end = findTemplateEnd(text, i)
+      if (end === -1) break
+      const inner = text.slice(i + '{{quote|'.length, end - 2)
+      result += '\n' + unwrapQuoteTemplates(inner) + '\n'
+      i = end
+    } else {
+      result += text[i]
+      i++
+    }
+  }
+  return result
+}
+
+/**
  * 全文扫描：深度 0 的换行分段；{{*|…}} 成为注释并锚定当前正文位置。
  * 返回 [{ original, annotations }]
  */
 function parseDocument(raw) {
-  const text = raw
-    .replace(/^\{\{header[\s\S]*?\n\}\}\n/, '')
-    .replace(/<!--[\s\S]*?-->/g, '')
-    .replace(/^==.*==$/gm, '')
-    .replace(/^__\w+__$/gm, '')
+  const text = unwrapQuoteTemplates(
+    raw
+      .replace(/^\{\{header[\s\S]*?\n\}\}\n/, '')
+      .replace(/<!--[\s\S]*?-->/g, '')
+      .replace(/^==.*==$/gm, '')
+      .replace(/^__\w+__$/gm, ''),
+  )
 
   const paragraphs = []
   let buf = '' // 当前段原文（未 cleanInline）
