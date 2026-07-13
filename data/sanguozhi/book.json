@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "id": "sanguozhi",
+  "title": "三国志",
+  "author": "陳壽",
+  "dynasty": "西晉",
+  "annotationLayers": [
+    { "id": "peizhu", "label": "裴注", "source": "南朝宋·裴松之" }
+  ]
+}
