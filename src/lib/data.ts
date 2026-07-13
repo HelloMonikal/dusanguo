@@ -7,7 +7,9 @@ import type {
   TocNode,
 } from './schema'
 
-const DATA_BASE: string = import.meta.env.VITE_DATA_BASE ?? '/data'
+// 数据基础路径：默认跟随部署基路径（如 GitHub Pages 的 /<repo>/data），可用 VITE_DATA_BASE 覆盖
+const DATA_BASE: string =
+  import.meta.env.VITE_DATA_BASE ?? `${import.meta.env.BASE_URL}data`
 
 async function fetchJson<T>(path: string): Promise<T> {
   const res = await fetch(`${DATA_BASE}${path}`)
