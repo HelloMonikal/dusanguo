@@ -455,7 +455,7 @@
      "name": "靈帝",
      "birth": 156,
      "death": 189,
-     "note": "漢靈帝劉宏"
+     "refId": "handi-ling"
     },
     {
      "type": "person",
@@ -582,7 +582,7 @@
      "name": "靈帝",
      "birth": 156,
      "death": 189,
-     "note": "漢靈帝劉宏"
+     "refId": "handi-ling"
     },
     {
      "type": "person",
@@ -591,7 +591,8 @@
       54
      ],
      "name": "何進",
-     "death": 189
+     "death": 189,
+     "refId": "hejin"
     },
     {
      "type": "person",
@@ -624,7 +625,7 @@
      "name": "獻帝",
      "birth": 181,
      "death": 234,
-     "note": "漢獻帝劉協"
+     "refId": "handi-xian"
     },
     {
      "type": "person",
@@ -881,7 +882,7 @@
      ],
      "name": "袁術",
      "death": 199,
-     "note": "字公路"
+     "refId": "yuanshu"
     },
     {
      "type": "place",
@@ -1416,7 +1417,7 @@
      ],
      "name": "夏侯惇",
      "death": 220,
-     "note": "字元讓"
+     "refId": "xiahoudun"
     },
     {
      "type": "place",

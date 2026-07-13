@@ -79,6 +79,28 @@
    "preview": "亮少有逸眾之才，英霸之器，身長八尺，容貌甚偉，時人異焉。…"
   }
  ],
+ "handi-ling": [
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p004",
+   "preview": "頃之，冀州刺史王芬、南陽許攸、沛國周旌等連結豪傑，謀廢靈…"
+  },
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p005",
+   "preview": "金城邊章、韓遂殺刺史郡守以叛，衆十餘萬，天下騷動。徵太祖…"
+  }
+ ],
+ "hejin": [
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p005",
+   "preview": "金城邊章、韓遂殺刺史郡守以叛，衆十餘萬，天下騷動。徵太祖…"
+  }
+ ],
  "yuanshao": [
   {
    "chapterId": "wei-01",
@@ -125,6 +147,36 @@
    "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
   }
  ],
+ "handi-xian": [
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p005",
+   "preview": "金城邊章、韓遂殺刺史郡守以叛，衆十餘萬，天下騷動。徵太祖…"
+  }
+ ],
+ "yuanshu": [
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p006",
+   "preview": "初平元年春正月，後將軍袁術、冀州牧韓馥、豫州刺史孔伷、兖…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p001",
+   "preview": "諸葛亮字孔明，琅邪陽都人也。漢司隸校尉諸葛豐後也。父圭，…"
+  }
+ ],
+ "xiahoudun": [
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p009",
+   "preview": "太祖兵少，乃與夏侯惇等詣揚州募兵，刺史陳溫、丹楊太守周昕…"
+  }
+ ],
  "zhugeliang": [
   {
    "chapterId": "shu-35",
@@ -149,6 +201,40 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p040",
    "preview": "評曰：諸葛亮之為相國也，撫百姓，示儀軌，約官職，從權制，…"
+  }
+ ],
+ "liubiao": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p001",
+   "preview": "諸葛亮字孔明，琅邪陽都人也。漢司隸校尉諸葛豐後也。父圭，…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p003",
+   "preview": "劉表長子琦，亦深器亮。表受後妻之言，愛少子琮，不悅於琦。…"
+  }
+ ],
+ "xushu": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p001",
+   "preview": "諸葛亮字孔明，琅邪陽都人也。漢司隸校尉諸葛豐後也。父圭，…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p003",
+   "preview": "劉表長子琦，亦深器亮。表受後妻之言，愛少子琮，不悅於琦。…"
   }
  ],
  "liubei": [
@@ -221,6 +307,34 @@
    "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
   }
  ],
+ "liuzhang": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p005",
+   "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  }
+ ],
+ "zhanglu": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p002",
+   "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p005",
+   "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  }
+ ],
  "guanyu": [
   {
    "chapterId": "shu-35",
@@ -253,6 +367,242 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p005",
    "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  }
+ ],
+ "liuqi": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p004",
+   "preview": "先主至於夏口，亮曰：「事急矣，請奉命求救於孫將軍。」時權…"
+  }
+ ],
+ "zhouyu": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p004",
+   "preview": "先主至於夏口，亮曰：「事急矣，請奉命求救於孫將軍。」時權…"
+  }
+ ],
+ "chengpu": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p004",
+   "preview": "先主至於夏口，亮曰：「事急矣，請奉命求救於孫將軍。」時權…"
+  }
+ ],
+ "lusu": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p004",
+   "preview": "先主至於夏口，亮曰：「事急矣，請奉命求救於孫將軍。」時權…"
+  }
+ ],
+ "fazheng": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p005",
+   "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  }
+ ],
+ "zhaoyun": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p005",
+   "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p013",
+   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
+  }
+ ],
+ "caopi": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p006",
+   "preview": "章武三年春，先主於永安病篤，召亮於成都，屬以後事，謂亮曰…"
+  }
+ ],
+ "liushan": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p006",
+   "preview": "章武三年春，先主於永安病篤，召亮於成都，屬以後事，謂亮曰…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p019",
+   "preview": "初，亮自表後主曰：「成都有桑八百株，薄田十五頃，子弟衣食…"
+  }
+ ],
+ "feiyi": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p009",
+   "preview": "先帝創業未半而中道崩殂，今天下三分，益州疲弊，此誠危急存…"
+  }
+ ],
+ "dongyun": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p009",
+   "preview": "先帝創業未半而中道崩殂，今天下三分，益州疲弊，此誠危急存…"
+  }
+ ],
+ "xiangchong": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p009",
+   "preview": "先帝創業未半而中道崩殂，今天下三分，益州疲弊，此誠危急存…"
+  }
+ ],
+ "dengzhi": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p013",
+   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
+  }
+ ],
+ "caozhen": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p013",
+   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p014",
+   "preview": "冬，亮復出散關，圍陳倉，曹真拒之，亮糧盡而還。魏將軍王雙…"
+  }
+ ],
+ "caorui": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p013",
+   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
+  }
+ ],
+ "zhanghe": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p013",
+   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p015",
+   "preview": "九年，亮復出祁山，以木牛運，糧盡退軍，與魏將張郃交戰，射…"
+  }
+ ],
+ "masu": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p013",
+   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p014",
+   "preview": "冬，亮復出散關，圍陳倉，曹真拒之，亮糧盡而還。魏將軍王雙…"
+  }
+ ],
+ "guohuai": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p014",
+   "preview": "冬，亮復出散關，圍陳倉，曹真拒之，亮糧盡而還。魏將軍王雙…"
+  }
+ ],
+ "simayi": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p016",
+   "preview": "十二年春，亮悉大眾由斜谷出，以流馬運，據武功五丈原，與司…"
+  }
+ ],
+ "zhonghui": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p021",
+   "preview": "景耀六年春，詔為亮立廟於沔陽。秋，魏鎮西將軍鐘會征蜀，至…"
+  }
+ ],
+ "liucong": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p033",
+   "preview": "亮少有逸眾之才，英霸之器，身長八尺，容貌甚偉，時人異焉。…"
+  }
+ ],
+ "chenshou": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p036",
+   "preview": "伏惟陛下邁蹤古聖，蕩然無忌，故雖敵國誹謗之言，咸肆其辭而…"
+  }
+ ],
+ "zhugeke": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p037",
+   "preview": "喬字伯松，亮兄瑾之第二子也，本字仲慎。與兄元遜俱有名於時…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p039",
+   "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
+  }
+ ],
+ "dengai": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p038",
+   "preview": "瞻字思遠。建興十二年，亮出武功，與瑾書曰：「瞻今已八歲，…"
+  }
+ ],
+ "jiangwei": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p039",
+   "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
+  }
+ ],
+ "huanghao": [
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p039",
+   "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
   }
  ]
 }
