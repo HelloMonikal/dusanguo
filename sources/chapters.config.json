@@ -3,7 +3,7 @@
     "book": "sanguozhi",
     "chapterId": "wei-01",
     "title": "魏書一·武帝紀（節選）",
-    "tocTitle": "卷一·武帝紀（節選）",
+    "tocTitle": "魏書-武帝紀（節選）-卷一",
     "tocGroup": "魏書",
     "wikisourcePage": "三國志/卷01",
     "range": [
@@ -16,7 +16,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-31",
     "title": "蜀書一·劉二牧傳",
-    "tocTitle": "卷三十一·劉二牧傳",
+    "tocTitle": "蜀書-劉二牧傳-卷三十一",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷31",
     "enabled": false
@@ -25,7 +25,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-32",
     "title": "蜀書二·先主傳",
-    "tocTitle": "卷三十二·先主傳",
+    "tocTitle": "蜀書-先主傳-卷三十二",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷32",
     "enabled": true
@@ -34,7 +34,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-33",
     "title": "蜀書三·後主傳",
-    "tocTitle": "卷三十三·後主傳",
+    "tocTitle": "蜀書-後主傳-卷三十三",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷33",
     "enabled": false
@@ -43,7 +43,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-34",
     "title": "蜀書四·二主妃子傳",
-    "tocTitle": "卷三十四·二主妃子傳",
+    "tocTitle": "蜀書-二主妃子傳-卷三十四",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷34",
     "enabled": false
@@ -52,7 +52,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-35",
     "title": "蜀書五·諸葛亮傳",
-    "tocTitle": "卷三十五·諸葛亮傳",
+    "tocTitle": "蜀書-諸葛亮傳-卷三十五",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷35",
     "enabled": true
@@ -61,7 +61,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-36",
     "title": "蜀書六·關張馬黃趙傳",
-    "tocTitle": "卷三十六·關張馬黃趙傳",
+    "tocTitle": "蜀書-關張馬黃趙傳-卷三十六",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷36",
     "enabled": false
@@ -70,7 +70,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-37",
     "title": "蜀書七·龐統法正傳",
-    "tocTitle": "卷三十七·龐統法正傳",
+    "tocTitle": "蜀書-龐統法正傳-卷三十七",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷37",
     "enabled": false
@@ -79,7 +79,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-38",
     "title": "蜀書八·許糜孫簡伊秦傳",
-    "tocTitle": "卷三十八·許糜孫簡伊秦傳",
+    "tocTitle": "蜀書-許糜孫簡伊秦傳-卷三十八",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷38",
     "enabled": false
@@ -88,7 +88,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-39",
     "title": "蜀書九·董劉馬陳董呂傳",
-    "tocTitle": "卷三十九·董劉馬陳董呂傳",
+    "tocTitle": "蜀書-董劉馬陳董呂傳-卷三十九",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷39",
     "enabled": false
@@ -97,7 +97,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-40",
     "title": "蜀書十·劉彭廖李劉魏楊傳",
-    "tocTitle": "卷四十·劉彭廖李劉魏楊傳",
+    "tocTitle": "蜀書-劉彭廖李劉魏楊傳-卷四十",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷40",
     "enabled": false
@@ -106,7 +106,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-41",
     "title": "蜀書十一·霍王向張楊費傳",
-    "tocTitle": "卷四十一·霍王向張楊費傳",
+    "tocTitle": "蜀書-霍王向張楊費傳-卷四十一",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷41",
     "enabled": false
@@ -115,7 +115,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-42",
     "title": "蜀書十二·杜周杜許孟來尹李譙郤傳",
-    "tocTitle": "卷四十二·杜周杜許孟來尹李譙郤傳",
+    "tocTitle": "蜀書-杜周杜許孟來尹李譙郤傳-卷四十二",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷42",
     "enabled": false
@@ -124,7 +124,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-43",
     "title": "蜀書十三·黃李呂馬王張傳",
-    "tocTitle": "卷四十三·黃李呂馬王張傳",
+    "tocTitle": "蜀書-黃李呂馬王張傳-卷四十三",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷43",
     "enabled": false
@@ -133,7 +133,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-44",
     "title": "蜀書十四·蔣琬費禕姜維傳",
-    "tocTitle": "卷四十四·蔣琬費禕姜維傳",
+    "tocTitle": "蜀書-蔣琬費禕姜維傳-卷四十四",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷44",
     "enabled": false
@@ -142,7 +142,7 @@
     "book": "sanguozhi",
     "chapterId": "shu-45",
     "title": "蜀書十五·鄧張宗楊傳",
-    "tocTitle": "卷四十五·鄧張宗楊傳",
+    "tocTitle": "蜀書-鄧張宗楊傳-卷四十五",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷45",
     "enabled": false

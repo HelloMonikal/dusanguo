@@ -1,29 +1,17 @@
 [
  {
-  "id": "group-魏書",
-  "title": "魏書",
-  "children": [
-   {
-    "id": "wei-01-node",
-    "title": "卷一·武帝紀（節選）",
-    "chapterId": "wei-01"
-   }
-  ]
+  "id": "wei-01-node",
+  "title": "魏書-武帝紀（節選）-卷一",
+  "chapterId": "wei-01"
  },
  {
-  "id": "group-蜀書",
-  "title": "蜀書",
-  "children": [
-   {
-    "id": "shu-32-node",
-    "title": "卷三十二·先主傳",
-    "chapterId": "shu-32"
-   },
-   {
-    "id": "shu-35-node",
-    "title": "卷三十五·諸葛亮傳",
-    "chapterId": "shu-35"
-   }
-  ]
+  "id": "shu-32-node",
+  "title": "蜀書-先主傳-卷三十二",
+  "chapterId": "shu-32"
+ },
+ {
+  "id": "shu-35-node",
+  "title": "蜀書-諸葛亮傳-卷三十五",
+  "chapterId": "shu-35"
  }
 ]

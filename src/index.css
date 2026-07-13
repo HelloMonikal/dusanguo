@@ -172,20 +172,20 @@ a {
   min-width: 0;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 1.5rem 2rem 4rem;
+  padding: 1rem 1.5rem 3rem;
 }
 
 .chapter-title {
   text-align: center;
   font-size: 1.4rem;
-  margin: 0.5rem 0 2rem;
+  margin: 0.25rem 0 1.25rem;
 }
 
 .chapter-nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
-  padding-top: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
   border-top: 1px solid var(--line);
 }
 
@@ -200,7 +200,7 @@ a {
   display: block;
   width: 100%;
   text-align: left;
-  padding: 0.35rem 0.75rem;
+  padding: 0.22rem 0.6rem;
   border-radius: 6px;
   line-height: 1.5;
 }
@@ -236,7 +236,7 @@ a {
 /* ---------- 段落 ---------- */
 
 .paragraph {
-  padding: 1rem 0 1.25rem;
+  padding: 0.6rem 0 0.75rem;
   border-top: 1px solid var(--line);
 }
 
@@ -248,7 +248,7 @@ a {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .star {
@@ -268,7 +268,7 @@ a {
 .paragraph-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.75rem;
+  gap: 1.25rem;
 }
 
 .paragraph-body.original-only {
@@ -276,14 +276,15 @@ a {
 }
 
 .original {
-  line-height: 2.1;
+  line-height: 1.95;
   letter-spacing: 0.02em;
 }
 
 .translation {
   color: #3f4550;
-  font-size: 0.95rem;
-  padding-left: 1.75rem;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  padding-left: 1.25rem;
   border-left: 1px solid var(--line);
   transition: background 0.15s;
   border-radius: 4px;
@@ -363,13 +364,13 @@ button.entity-person.clickable:hover {
 }
 
 .annotation-note {
-  margin-top: 0.75rem;
-  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.85rem;
   background: var(--note-bg);
   border: 1px solid var(--note-line);
   border-radius: 8px;
-  font-size: 0.9rem;
-  line-height: 1.9;
+  font-size: 0.95rem;
+  line-height: 1.85;
 }
 
 .annotation-note-head {

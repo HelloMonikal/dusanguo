@@ -17,10 +17,27 @@ export interface ReaderSettings {
 export const DEFAULT_SETTINGS: ReaderSettings = {
   script: 'traditional',
   showTranslation: true,
-  fontSize: 18,
+  fontSize: 20,
   fontFamily: 'song',
   showLifespan: true,
 }
+
+/** 设置结构版本迁移：v1（无版本号）→ v2 把旧默认字号 18 提升为 20 */
+function migrateStoredSettings() {
+  try {
+    const raw = localStorage.getItem('reader-settings')
+    if (!raw) return
+    const parsed = JSON.parse(raw)
+    if (parsed && typeof parsed === 'object' && parsed.v === undefined) {
+      if (parsed.fontSize === 18) parsed.fontSize = 20
+      parsed.v = 2
+      localStorage.setItem('reader-settings', JSON.stringify(parsed))
+    }
+  } catch {
+    // 解析失败则交由 readJson 回退默认值
+  }
+}
+migrateStoredSettings()
 
 export const FONT_STACKS: Record<ReaderSettings['fontFamily'], string> = {
   song: '"Songti SC", "Noto Serif SC", SimSun, serif',

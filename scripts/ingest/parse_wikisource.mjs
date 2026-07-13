@@ -306,27 +306,20 @@ for (const cfg of CHAPTERS) {
   )
 }
 
-// ---------- toc.json（按配置 tocGroup 自动生成，仅 enabled 章节） ----------
+// ---------- toc.json（按配置自动生成，仅 enabled 章节；扁平列表，条目自带部名） ----------
 
 if (!draftMode) {
   for (const book of bookChapters.keys()) {
-    const groups = []
-    for (const cfg of ALL_CHAPTERS) {
-      if (cfg.book !== book || !cfg.enabled) continue
-      let group = groups.find((g) => g.title === cfg.tocGroup)
-      if (!group) {
-        group = { id: `group-${cfg.tocGroup}`, title: cfg.tocGroup, children: [] }
-        groups.push(group)
-      }
-      group.children.push({
+    const nodes = ALL_CHAPTERS.filter((cfg) => cfg.book === book && cfg.enabled).map(
+      (cfg) => ({
         id: `${cfg.chapterId}-node`,
         title: cfg.tocTitle,
         chapterId: cfg.chapterId,
-      })
-    }
+      }),
+    )
     writeFileSync(
       path.join(ROOT, 'public/data', book, 'toc.json'),
-      JSON.stringify(groups, null, 1),
+      JSON.stringify(nodes, null, 1),
     )
   }
 }
