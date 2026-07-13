@@ -23,9 +23,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
-      - run: npm run build -- --base=/dusanguo/
+      - run: npm run build -- --base=/
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
+          cname: dusanguo.xyz

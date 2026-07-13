@@ -2,7 +2,7 @@
 
 对标「读通鉴」(dutongjian.com) 的通用古籍深度阅读 Web 应用。当前内容为《三国志》（陈寿撰，裴松之注）。
 
-**在线阅读**：https://hellomonikal.github.io/dusanguo/
+**在线阅读**：https://dusanguo.xyz
 
 ## 特性
 
