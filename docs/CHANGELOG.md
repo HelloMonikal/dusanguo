@@ -4,6 +4,12 @@
 
 （各分支在此追加自己的小节；发版时归档到版本号下）
 
+### M3 批 1（2026-07-13）
+- 管线数据驱动：章节清单外置 `sources/chapters.config.json`（enabled 控制上线）、`fetch_wikisource.mjs` 幂等抓取、toc.json 自动生成、`--draft [chapterId]` 工作单
+- 管线新能力：`sources/annotations/` 裴注白话合入、段级译文可由对齐句对派生（D-009）
+- 解析修复：`{{quote}}` 成篇引文（劝进表/即位文等）此前被丢弃，现展开为段落；`-{}-` 繁简转换标记残留清除
+- 内容：蜀书卷 32 先主传上线（38 段全对齐，321 句对）；人物库 47→70 人（新增公孙瓒/吕布/庞统/马超/陆逊等 23 人生平）
+
 ## v0.2（2026-07-13）—— M2 句级对照联动 + 人物卡片
 
 - Schema v2：句级对齐 `sentences`、人物引用 `refId`、人物库 persons.json、出现位置索引 person-index.json（新字段可选，兼容 v1）
