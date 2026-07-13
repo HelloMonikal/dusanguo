@@ -8,35 +8,27 @@
  * - [[A|B]] → B，[[A]] → A，{{YL|显示|年份}} → 显示，其余模板丢弃
  * - 实体：按词典（sources/entities/<book>.json）在原文中自动匹配区间；
  *   词典项带 id 时输出 refId，并抽取本名条目（带 bio）生成 persons.json
- * - 翻译：从 sources/translations/<chapterId>.json（段序号 → 白话）合入
+ * - 翻译：从 sources/translations/<chapterId>.json（段序号 → 白话）合入；
+ *   无该文件时由对齐句对的 t 拼接派生段级译文（单一事实源，见 D-009）
  * - 句级对齐（v2）：从 sources/alignments/<chapterId>.json（段序号 → [{o,t}] 句子
  *   字符串对）按顺序子串定位换算为区间，校验拼接完整性，失败即报错
+ * - 裴注白话：从 sources/annotations/<chapterId>.json（段序号 → 按注序的白话数组）
+ *   合入 Annotation.translation
+ * - 章节清单来自 sources/chapters.config.json（enabled 控制是否解析/进 toc）；
+ *   toc.json 按配置 tocGroup 自动生成
  * - 扫描全部章节生成 person-index.json（人物出现位置）
  *
- * 用法：node scripts/ingest/parse_wikisource.mjs [--draft]
+ * 用法：node scripts/ingest/parse_wikisource.mjs [--draft [chapterId]]
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import path from 'node:path'
 
 const ROOT = path.resolve(import.meta.dirname, '../..')
 
-/** 章节配置：range 为保留的段落区间 [start, end)，null 表示全部 */
-const CHAPTERS = [
-  {
-    book: 'sanguozhi',
-    chapterId: 'wei-01',
-    title: '魏書一·武帝紀（節選）',
-    source: 'sanguozhi01.txt',
-    range: [0, 12],
-  },
-  {
-    book: 'sanguozhi',
-    chapterId: 'shu-35',
-    title: '蜀書五·諸葛亮傳',
-    source: 'sanguozhi35.txt',
-    range: null,
-  },
-]
+/** 章节配置（sources/chapters.config.json）：range 为保留的段落区间 [start, end) */
+const ALL_CHAPTERS = JSON.parse(
+  readFileSync(path.join(ROOT, 'sources/chapters.config.json'), 'utf8'),
+)
 
 /** 清理链接与行内标记（模板已在扫描阶段处理） */
 function cleanInline(text) {
@@ -188,42 +180,67 @@ function markEntities(original, dict) {
   return found.sort((a, b) => a.span[0] - b.span[0])
 }
 
-const draftMode = process.argv.includes('--draft')
+const argv = process.argv.slice(2)
+const draftMode = argv.includes('--draft')
+const draftTarget = argv[argv.indexOf('--draft') + 1]?.startsWith?.('--')
+  ? undefined
+  : argv[argv.indexOf('--draft') + 1]
+
+// 正常模式只处理 enabled 章节；draft 模式可指定任意章节出工作单
+const CHAPTERS = draftMode
+  ? ALL_CHAPTERS.filter((c) => (draftTarget ? c.chapterId === draftTarget : c.enabled))
+  : ALL_CHAPTERS.filter((c) => c.enabled)
+
+if (draftMode && draftTarget && CHAPTERS.length === 0) {
+  throw new Error(`chapters.config.json 中没有章节「${draftTarget}」`)
+}
 
 /** book id → 已生成章节列表，用于 person-index / persons 输出 */
 const bookChapters = new Map()
 const bookDicts = new Map()
 
 for (const cfg of CHAPTERS) {
-  const raw = readFileSync(path.join(ROOT, 'sources/wikisource', cfg.source), 'utf8')
+  const sourcePath = path.join(ROOT, 'sources/wikisource', `${cfg.chapterId}.txt`)
+  if (!existsSync(sourcePath)) {
+    throw new Error(`缺原文 ${sourcePath}，先运行 fetch_wikisource.mjs ${cfg.chapterId}`)
+  }
+  const raw = readFileSync(sourcePath, 'utf8')
   let parsed = parseDocument(raw)
   if (cfg.range) parsed = parsed.slice(cfg.range[0], cfg.range[1])
 
-  const translationsPath = path.join(ROOT, 'sources/translations', `${cfg.chapterId}.json`)
-  const translations = existsSync(translationsPath)
-    ? JSON.parse(readFileSync(translationsPath, 'utf8'))
-    : {}
-  const alignmentsPath = path.join(ROOT, 'sources/alignments', `${cfg.chapterId}.json`)
-  const alignments = existsSync(alignmentsPath)
-    ? JSON.parse(readFileSync(alignmentsPath, 'utf8'))
-    : {}
+  const readSource = (dir) => {
+    const p = path.join(ROOT, 'sources', dir, `${cfg.chapterId}.json`)
+    return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : {}
+  }
+  const translations = readSource('translations')
+  const alignments = readSource('alignments')
+  const annotationTranslations = readSource('annotations')
   const dictPath = path.join(ROOT, 'sources/entities', `${cfg.book}.json`)
   const dict = existsSync(dictPath) ? JSON.parse(readFileSync(dictPath, 'utf8')) : []
   bookDicts.set(cfg.book, dict)
 
   let missingAlignment = 0
+  let missingAnnTr = 0
   const paragraphs = parsed.map((entry, idx) => {
     const key = String(idx + 1)
+    const pairs = alignments[key]
     const p = {
       id: `${cfg.chapterId}-p${String(idx + 1).padStart(3, '0')}`,
       original: entry.original,
-      translation: translations[key] ?? '',
+      // 段级译文优先取 translations，缺省时由对齐句对派生（D-009）
+      translation: translations[key] ?? (pairs?.length ? pairs.map((s) => s.t).join('') : ''),
     }
-    if (entry.annotations.length) p.annotations = entry.annotations
+    if (entry.annotations.length) {
+      const annTr = annotationTranslations[key] ?? []
+      p.annotations = entry.annotations.map((a, i) => {
+        if (annTr[i]) return { ...a, translation: annTr[i] }
+        missingAnnTr++
+        return a
+      })
+    }
     const entities = markEntities(entry.original, dict)
     if (entities.length) p.entities = entities
 
-    const pairs = alignments[key]
     if (pairs?.length) {
       const oSpans = alignSentences(p.original, pairs.map((s) => s.o), p.id, '原文')
       const tSpans = alignSentences(p.translation, pairs.map((s) => s.t), p.id, '白话')
@@ -240,6 +257,8 @@ for (const cfg of CHAPTERS) {
       const gaps = []
       if (!p.translation) gaps.push('缺翻译')
       if (!p.sentences) gaps.push('缺对齐')
+      const annMissing = (p.annotations ?? []).filter((a) => !a.translation).length
+      if (annMissing) gaps.push(`裴注缺白话 ${annMissing} 条`)
       console.log(`\n[${p.id}]（注 ${p.annotations?.length ?? 0} 条${gaps.length ? '，' + gaps.join('，') : ''}）`)
       console.log(p.original)
     }
@@ -258,8 +277,33 @@ for (const cfg of CHAPTERS) {
 
   const missing = paragraphs.filter((p) => !p.translation).length
   console.log(
-    `${cfg.chapterId}: ${paragraphs.length} 段，注释 ${paragraphs.reduce((n, p) => n + (p.annotations?.length ?? 0), 0)} 条，缺翻译 ${missing} 段，缺对齐 ${missingAlignment} 段`,
+    `${cfg.chapterId}: ${paragraphs.length} 段，注释 ${paragraphs.reduce((n, p) => n + (p.annotations?.length ?? 0), 0)} 条（缺白话 ${missingAnnTr}），缺翻译 ${missing} 段，缺对齐 ${missingAlignment} 段`,
   )
+}
+
+// ---------- toc.json（按配置 tocGroup 自动生成，仅 enabled 章节） ----------
+
+if (!draftMode) {
+  for (const book of bookChapters.keys()) {
+    const groups = []
+    for (const cfg of ALL_CHAPTERS) {
+      if (cfg.book !== book || !cfg.enabled) continue
+      let group = groups.find((g) => g.title === cfg.tocGroup)
+      if (!group) {
+        group = { id: `group-${cfg.tocGroup}`, title: cfg.tocGroup, children: [] }
+        groups.push(group)
+      }
+      group.children.push({
+        id: `${cfg.chapterId}-node`,
+        title: cfg.tocTitle,
+        chapterId: cfg.chapterId,
+      })
+    }
+    writeFileSync(
+      path.join(ROOT, 'public/data', book, 'toc.json'),
+      JSON.stringify(groups, null, 1),
+    )
+  }
 }
 
 // ---------- persons.json 与 person-index.json ----------
