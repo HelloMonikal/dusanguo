@@ -555,11 +555,21 @@
     {
      "type": "person",
      "span": [
+      2,
+      4
+     ],
+     "name": "邊章",
+     "note": "涼州人，靈帝末與韓遂等起事西州"
+    },
+    {
+     "type": "person",
+     "span": [
       5,
       7
      ],
      "name": "韓遂",
-     "death": 215
+     "death": 215,
+     "refId": "hansui"
     },
     {
      "type": "person",

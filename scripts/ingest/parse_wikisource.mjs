@@ -38,6 +38,7 @@ function cleanInline(text) {
     .replace(/-\{([^}]*)\}-/g, '$1') // 维基繁简转换标记 -{乾}- → 乾
     .replace(/<\/?(?:u|blockquote|onlyinclude|poem)>/g, '')
     .replace(/'''?/g, '')
+    .replace(/^:+/, '') // 维基缩进标记
     .replace(/^[　\s]+|[　\s]+$/g, '')
 }
 
@@ -88,7 +89,7 @@ function parseDocument(raw) {
     raw
       .replace(/^\{\{header[\s\S]*?\n\}\}\n/, '')
       .replace(/<!--[\s\S]*?-->/g, '')
-      .replace(/^==.*==$/gm, '')
+      .replace(/^==.*==[ \t　]*$/gm, '')
       .replace(/^__\w+__$/gm, ''),
   )
 

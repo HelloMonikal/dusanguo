@@ -10,8 +10,18 @@
   "chapterId": "shu-32"
  },
  {
+  "id": "shu-33-node",
+  "title": "蜀書-後主傳-卷三十三",
+  "chapterId": "shu-33"
+ },
+ {
   "id": "shu-35-node",
   "title": "蜀書-諸葛亮傳-卷三十五",
   "chapterId": "shu-35"
+ },
+ {
+  "id": "shu-36-node",
+  "title": "蜀書-關張馬黃趙傳-卷三十六",
+  "chapterId": "shu-36"
  }
 ]

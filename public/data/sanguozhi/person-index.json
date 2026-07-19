@@ -163,6 +163,12 @@
    "preview": "惟建安二十六年四月丙午，皇帝備敢用玄牡，昭告皇天上帝后土…"
   },
   {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p045",
+   "preview": "惟景元五年三月丁亥，皇帝臨軒，使太常嘉命劉禪為安樂縣公。…"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p002",
@@ -185,6 +191,66 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p033",
    "preview": "亮少有逸眾之才，英霸之器，身長八尺，容貌甚偉，時人異焉。…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p002",
+   "preview": "建安五年，曹公東征，先主奔袁紹。曹公禽羽以歸，拜為偏將軍…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p003",
+   "preview": "從先主就劉表。表卒，曹公定荊州，先主自樊將南渡江，別遣羽…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p005",
+   "preview": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p008",
+   "preview": "曹公破張魯，留夏侯淵、張郃守漢川。郃別督諸軍下巴西，欲徙…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p011",
+   "preview": "超既統眾，遂與韓遂合從，及楊秋、李堪、成宜等相結，進軍至…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p013",
+   "preview": "先主為漢中王，拜超為左將軍，假節。章武元年，遷驃騎將軍，…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p015",
+   "preview": "黃忠字漢升，南陽人也。荊州牧劉表以為中郎將，與表從子磐共…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p016",
+   "preview": "趙雲字子龍，常山真定人也。本屬公孫瓚，瓚遣先主為田楷拒袁…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p018",
+   "preview": "評曰：關羽、張飛皆稱萬人之敵，為世虎臣。羽報效曹公，飛義…"
   }
  ],
  "handi-ling": [
@@ -205,6 +271,32 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p003",
    "preview": "靈帝末，黃巾起，州郡各舉義兵，先主率其屬從校尉鄒靖討黃巾…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p010",
+   "preview": "馬超字孟起，右扶風茂陵人也。父騰，靈帝末與邊章、韓遂等俱…"
+  }
+ ],
+ "hansui": [
+  {
+   "chapterId": "wei-01",
+   "chapterTitle": "魏書一·武帝紀（節選）",
+   "paragraphId": "wei-01-p005",
+   "preview": "金城邊章、韓遂殺刺史郡守以叛，衆十餘萬，天下騷動。徵太祖…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p010",
+   "preview": "馬超字孟起，右扶風茂陵人也。父騰，靈帝末與邊章、韓遂等俱…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p011",
+   "preview": "超既統眾，遂與韓遂合從，及楊秋、李堪、成宜等相結，進軍至…"
   }
  ],
  "hejin": [
@@ -275,6 +367,24 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p002",
    "preview": "時先主屯新野。徐庶見先主，先主器之，謂先主曰：「諸葛孔明…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p002",
+   "preview": "建安五年，曹公東征，先主奔袁紹。曹公禽羽以歸，拜為偏將軍…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p016",
+   "preview": "趙雲字子龍，常山真定人也。本屬公孫瓚，瓚遣先主為田楷拒袁…"
   }
  ],
  "dongzhuo": [
@@ -527,6 +637,12 @@
    "preview": "評曰：先主之弘毅寬厚，知人待士，蓋有高祖之風，英雄之器焉…"
   },
   {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p001",
+   "preview": "後主諱禪，字公嗣，先主子也。建安二十四年，先主為漢中王，…"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p002",
@@ -561,6 +677,84 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p033",
    "preview": "亮少有逸眾之才，英霸之器，身長八尺，容貌甚偉，時人異焉。…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p001",
+   "preview": "關羽字雲長，本字長生，河東解人也。亡命奔涿郡。先主於鄉里…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p002",
+   "preview": "建安五年，曹公東征，先主奔袁紹。曹公禽羽以歸，拜為偏將軍…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p003",
+   "preview": "從先主就劉表。表卒，曹公定荊州，先主自樊將南渡江，別遣羽…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p005",
+   "preview": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p008",
+   "preview": "曹公破張魯，留夏侯淵、張郃守漢川。郃別督諸軍下巴西，欲徙…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p009",
+   "preview": "初，飛雄壯威猛，亞於關羽，魏謀臣程昱等咸稱羽、飛萬人之敵…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p011",
+   "preview": "超既統眾，遂與韓遂合從，及楊秋、李堪、成宜等相結，進軍至…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p012",
+   "preview": "先主遣人迎超，超將兵徑到城下。城中震怖，璋即稽首，以超為…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p013",
+   "preview": "先主為漢中王，拜超為左將軍，假節。章武元年，遷驃騎將軍，…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p015",
+   "preview": "黃忠字漢升，南陽人也。荊州牧劉表以為中郎將，與表從子磐共…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p016",
+   "preview": "趙雲字子龍，常山真定人也。本屬公孫瓚，瓚遣先主為田楷拒袁…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
   }
  ],
  "gongsunzan": [
@@ -581,6 +775,12 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p004",
    "preview": "袁紹攻公孫瓚，先主與田楷東屯齊。曹公征徐州，徐州牧陶謙遣…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p016",
+   "preview": "趙雲字子龍，常山真定人也。本屬公孫瓚，瓚遣先主為田楷拒袁…"
   }
  ],
  "taoqian": [
@@ -631,6 +831,12 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p005",
    "preview": "先主還小沛，復合兵得萬餘人。呂布惡之，自出兵攻先主，先主…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
   }
  ],
  "guanyu": [
@@ -707,6 +913,12 @@
    "preview": "章武元年夏四月，大赦，改年。以諸葛亮為丞相，許靖為司徒。…"
   },
   {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p038",
+   "preview": "三年秋九月，追諡故將軍關羽、張飛、馬超、龐統、黃忠。"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p002",
@@ -723,6 +935,42 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p005",
    "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p001",
+   "preview": "關羽字雲長，本字長生，河東解人也。亡命奔涿郡。先主於鄉里…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p005",
+   "preview": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p009",
+   "preview": "初，飛雄壯威猛，亞於關羽，魏謀臣程昱等咸稱羽、飛萬人之敵…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p018",
+   "preview": "評曰：關羽、張飛皆稱萬人之敵，為世虎臣。羽報效曹公，飛義…"
   }
  ],
  "dongcheng": [
@@ -769,6 +1017,24 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p003",
    "preview": "劉表長子琦，亦深器亮。表受後妻之言，愛少子琮，不悅於琦。…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p003",
+   "preview": "從先主就劉表。表卒，曹公定荊州，先主自樊將南渡江，別遣羽…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p015",
+   "preview": "黃忠字漢升，南陽人也。荊州牧劉表以為中郎將，與表從子磐共…"
   }
  ],
  "zhugeliang": [
@@ -827,6 +1093,12 @@
    "preview": "評曰：先主之弘毅寬厚，知人待士，蓋有高祖之風，英雄之器焉…"
   },
   {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p048",
+   "preview": "評曰：後主任賢相則為循理之君，惑閹堅則為昏暗之後，傳曰『…"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p001",
@@ -849,6 +1121,36 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p040",
    "preview": "評曰：諸葛亮之為相國也，撫百姓，示儀軌，約官職，從權制，…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p003",
+   "preview": "從先主就劉表。表卒，曹公定荊州，先主自樊將南渡江，別遣羽…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p006",
+   "preview": "追諡羽曰壯繆侯。子興嗣。興字安國，少有令問，丞相諸葛亮深…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p015",
+   "preview": "黃忠字漢升，南陽人也。荊州牧劉表以為中郎將，與表從子磐共…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
   }
  ],
  "zhangfei": [
@@ -889,6 +1191,12 @@
    "preview": "章武元年夏四月，大赦，改年。以諸葛亮為丞相，許靖為司徒。…"
   },
   {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p038",
+   "preview": "三年秋九月，追諡故將軍關羽、張飛、馬超、龐統、黃忠。"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p002",
@@ -899,6 +1207,30 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p005",
    "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p001",
+   "preview": "關羽字雲長，本字長生，河東解人也。亡命奔涿郡。先主於鄉里…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p018",
+   "preview": "評曰：關羽、張飛皆稱萬人之敵，為世虎臣。羽報效曹公，飛義…"
   }
  ],
  "zhaoyun": [
@@ -915,6 +1247,12 @@
    "preview": "明年，曹公徵孫權，權呼先主自救。先主遣使告璋曰：「曹公徵…"
   },
   {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p039",
+   "preview": "四年春三月，追諡故將軍趙雲。冬十月，大赦。"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p005",
@@ -925,6 +1263,18 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p013",
    "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p016",
+   "preview": "趙雲字子龍，常山真定人也。本屬公孫瓚，瓚遣先主為田楷拒袁…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p018",
+   "preview": "評曰：關羽、張飛皆稱萬人之敵，為世虎臣。羽報效曹公，飛義…"
   }
  ],
  "sunquan": [
@@ -965,6 +1315,24 @@
    "preview": "二年春正月，先主軍還秭歸，將軍吳班、陳式水軍屯夷陵，夾江…"
   },
   {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p002",
+   "preview": "建興元年夏，臧柯太守朱褒擁郡反。先是，益州郡有大姓雍闓反…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p008",
+   "preview": "七年春，亮遣陳式攻武都、陰平，遂克定二郡。冬，亮徙從府營…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p030",
+   "preview": "十五年，吳王孫權薨。立子琮為西河王。"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p002",
@@ -993,6 +1361,24 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p039",
    "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p003",
+   "preview": "從先主就劉表。表卒，曹公定荊州，先主自樊將南渡江，別遣羽…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p005",
+   "preview": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p009",
+   "preview": "初，飛雄壯威猛，亞於關羽，魏謀臣程昱等咸稱羽、飛萬人之敵…"
   }
  ],
  "zhouyu": [
@@ -1047,6 +1433,30 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p005",
    "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p011",
+   "preview": "超既統眾，遂與韓遂合從，及楊秋、李堪、成宜等相結，進軍至…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p015",
+   "preview": "黃忠字漢升，南陽人也。荊州牧劉表以為中郎將，與表從子磐共…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
   }
  ],
  "zhanglu": [
@@ -1079,6 +1489,18 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p005",
    "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p008",
+   "preview": "曹公破張魯，留夏侯淵、張郃守漢川。郃別督諸軍下巴西，欲徙…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p011",
+   "preview": "超既統眾，遂與韓遂合從，及楊秋、李堪、成宜等相結，進軍至…"
   }
  ],
  "zhongyao": [
@@ -1087,6 +1509,12 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p014",
    "preview": "十六年，益州牧劉璋遙聞曹公將遣鍾繇等向漢中討張魯，內懷恐…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p010",
+   "preview": "馬超字孟起，右扶風茂陵人也。父騰，靈帝末與邊章、韓遂等俱…"
   }
  ],
  "zhangsong": [
@@ -1133,6 +1561,18 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p005",
    "preview": "建安十六年，益州牧劉璋遣法正迎先主，使擊張魯。亮與關羽鎮…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
   }
  ],
  "pangtong": [
@@ -1141,6 +1581,18 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p014",
    "preview": "十六年，益州牧劉璋遙聞曹公將遣鍾繇等向漢中討張魯，內懷恐…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p038",
+   "preview": "三年秋九月，追諡故將軍關羽、張飛、馬超、龐統、黃忠。"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
   }
  ],
  "huangzhong": [
@@ -1161,6 +1613,30 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p021",
    "preview": "平西將軍都亭侯臣馬超、左將軍（領）長史鎮軍將軍臣許靖、營…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p038",
+   "preview": "三年秋九月，追諡故將軍關羽、張飛、馬超、龐統、黃忠。"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p015",
+   "preview": "黃忠字漢升，南陽人也。荊州牧劉表以為中郎將，與表從子磐共…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p018",
+   "preview": "評曰：關羽、張飛皆稱萬人之敵，為世虎臣。羽報效曹公，飛義…"
   }
  ],
  "liyan": [
@@ -1187,6 +1663,18 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p034",
    "preview": "三年春二月，丞相亮自成都到永安。三月，黃元進兵攻臨邛縣。…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p005",
+   "preview": "四年春，都護李嚴自永安還住江州，築大城。"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p010",
+   "preview": "九年春二月，亮復出軍圍祁山，始以木牛運。魏司馬懿、張郃救…"
   }
  ],
  "machao": [
@@ -1201,6 +1689,36 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p021",
    "preview": "平西將軍都亭侯臣馬超、左將軍（領）長史鎮軍將軍臣許靖、營…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p038",
+   "preview": "三年秋九月，追諡故將軍關羽、張飛、馬超、龐統、黃忠。"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p003",
+   "preview": "從先主就劉表。表卒，曹公定荊州，先主自樊將南渡江，別遣羽…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p010",
+   "preview": "馬超字孟起，右扶風茂陵人也。父騰，靈帝末與邊章、韓遂等俱…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p018",
+   "preview": "評曰：關羽、張飛皆稱萬人之敵，為世虎臣。羽報效曹公，飛義…"
   }
  ],
  "xujing": [
@@ -1291,6 +1809,18 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p017",
    "preview": "二十年，孫權以先主已得益州，使使報欲得荊州。先主言：「須…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p008",
+   "preview": "曹公破張魯，留夏侯淵、張郃守漢川。郃別督諸軍下巴西，欲徙…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p015",
+   "preview": "黃忠字漢升，南陽人也。荊州牧劉表以為中郎將，與表從子磐共…"
   }
  ],
  "zhanghe": [
@@ -1299,6 +1829,18 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p017",
    "preview": "二十年，孫權以先主已得益州，使使報欲得荊州。先主言：「須…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p009",
+   "preview": "八年秋，魏使司馬懿由西城，張郃由子午，曹真由斜谷，欲攻漢…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p010",
+   "preview": "九年春二月，亮復出軍圍祁山，始以木牛運。魏司馬懿、張郃救…"
   },
   {
    "chapterId": "shu-35",
@@ -1311,6 +1853,12 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p015",
    "preview": "九年，亮復出祁山，以木牛運，糧盡退軍，與魏將張郃交戰，射…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p008",
+   "preview": "曹公破張魯，留夏侯淵、張郃守漢川。郃別督諸軍下巴西，欲徙…"
   }
  ],
  "liufeng": [
@@ -1327,6 +1875,18 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p025",
    "preview": "於是還治成都。拔魏延為都督，鎮漢中。 時關羽攻曹公將曹仁…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p009",
+   "preview": "八年秋，魏使司馬懿由西城，張郃由子午，曹真由斜谷，欲攻漢…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p013",
+   "preview": "十二年春二月，亮由斜谷出，始以流馬運。秋八月，亮卒渭濱。…"
   }
  ],
  "qiaozhou": [
@@ -1335,6 +1895,24 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p026",
    "preview": "二十五年，魏文帝稱尊號，改年曰黃初。或傳聞漢帝見害，先主…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p041",
+   "preview": "六年夏，魏大興徒從眾，命征西將軍鄧艾、鎮西將軍鍾會、雍州…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p042",
+   "preview": "限分江、漢，遇值深遠，階緣蜀土，斗絕一隅，干運犯冒，漸苒…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p047",
+   "preview": "食邑萬戶，賜絹萬匹，奴婢百人，他物稱是。子孫為三都尉封侯…"
   }
  ],
  "caopi": [
@@ -1381,6 +1959,36 @@
    "preview": "亮上言於後主曰："
   },
   {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p001",
+   "preview": "後主諱禪，字公嗣，先主子也。建安二十四年，先主為漢中王，…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p015",
+   "preview": "十四年夏四月，後主至湔，登觀坂，看汶水之流，旬日還成都。…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p043",
+   "preview": "是日，北地王諶傷國之亡，先殺妻子，次以自殺。紹、良與艾相…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p044",
+   "preview": "後主舉家東遷，既至洛陽，策命之曰："
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p048",
+   "preview": "評曰：後主任賢相則為循理之君，惑閹堅則為昏暗之後，傳曰『…"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p006",
@@ -1391,6 +1999,452 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p019",
    "preview": "初，亮自表後主曰：「成都有桑八百株，薄田十五頃，子弟衣食…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p016",
+   "preview": "趙雲字子龍，常山真定人也。本屬公孫瓚，瓚遣先主為田楷拒袁…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  }
+ ],
+ "dengzhi": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p002",
+   "preview": "建興元年夏，臧柯太守朱褒擁郡反。先是，益州郡有大姓雍闓反…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p026",
+   "preview": "十一年夏五月，大將軍費禕出屯漢中。秋，涪陵屬國民夷反，車…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p013",
+   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  }
+ ],
+ "simayi": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p009",
+   "preview": "八年秋，魏使司馬懿由西城，張郃由子午，曹真由斜谷，欲攻漢…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p010",
+   "preview": "九年春二月，亮復出軍圍祁山，始以木牛運。魏司馬懿、張郃救…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p016",
+   "preview": "十二年春，亮悉大眾由斜谷出，以流馬運，據武功五丈原，與司…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p005",
+   "preview": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率…"
+  }
+ ],
+ "caozhen": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p009",
+   "preview": "八年秋，魏使司馬懿由西城，張郃由子午，曹真由斜谷，欲攻漢…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p013",
+   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p014",
+   "preview": "冬，亮復出散關，圍陳倉，曹真拒之，亮糧盡而還。魏將軍王雙…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  }
+ ],
+ "guohuai": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p009",
+   "preview": "八年秋，魏使司馬懿由西城，張郃由子午，曹真由斜谷，欲攻漢…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p014",
+   "preview": "冬，亮復出散關，圍陳倉，曹真拒之，亮糧盡而還。魏將軍王雙…"
+  }
+ ],
+ "mazhong": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p012",
+   "preview": "十一年冬，亮使諸軍運米，集於斜谷口，治斜谷邸閣。是歲，南…"
+  }
+ ],
+ "yangyi": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p013",
+   "preview": "十二年春二月，亮由斜谷出，始以流馬運。秋八月，亮卒渭濱。…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p014",
+   "preview": "十三年春正月，中軍師楊儀廢徙漢嘉郡。夏四月，進蔣琬位為大…"
+  }
+ ],
+ "jiangwan": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p013",
+   "preview": "十二年春二月，亮由斜谷出，始以流馬運。秋八月，亮卒渭濱。…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p014",
+   "preview": "十三年春正月，中軍師楊儀廢徙漢嘉郡。夏四月，進蔣琬位為大…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p017",
+   "preview": "延熙元年春正月，立皇后張氏。大赦，攻元。立子睿為太子，子…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p018",
+   "preview": "二年春三月，進蔣琬位為大司馬。"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p020",
+   "preview": "四年冬十月，尚書令費禕至漢中，與蔣琬咨論事計，歲盡還。五…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p021",
+   "preview": "六年冬十月，大司馬蔣琬自還漢中，住涪。十一月，大赦。以尚…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p024",
+   "preview": "九年夏六月，費禕還成都。秋，大赦。冬十一月，大司馬蔣琬卒…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  }
+ ],
+ "zhangni": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p019",
+   "preview": "三年春，使越巂太守張嶷平定越巂郡。"
+  }
+ ],
+ "feiyi": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p020",
+   "preview": "四年冬十月，尚書令費禕至漢中，與蔣琬咨論事計，歲盡還。五…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p021",
+   "preview": "六年冬十月，大司馬蔣琬自還漢中，住涪。十一月，大赦。以尚…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p022",
+   "preview": "七年閏月，魏大將軍曹爽、夏侯玄等向漢中，鎮北大將軍王平拒…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p023",
+   "preview": "八年秋八月，皇太后薨。十二月，大將軍費禕至漢中，行圍守。"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p024",
+   "preview": "九年夏六月，費禕還成都。秋，大赦。冬十一月，大司馬蔣琬卒…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p026",
+   "preview": "十一年夏五月，大將軍費禕出屯漢中。秋，涪陵屬國民夷反，車…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p029",
+   "preview": "十四年夏，大將軍費禕還成都。冬，復北駐漢壽。大赦。"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p031",
+   "preview": "十六年春正月，大將軍費禕為魏降人郭循所殺於漢壽。夏四月，…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p009",
+   "preview": "先帝創業未半而中道崩殂，今天下三分，益州疲弊，此誠危急存…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  }
+ ],
+ "jiangwei": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p020",
+   "preview": "四年冬十月，尚書令費禕至漢中，與蔣琬咨論事計，歲盡還。五…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p025",
+   "preview": "十年，涼州胡王白虎文、治無戴等率眾降，衛將軍姜維迎逆安撫…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p027",
+   "preview": "十二年春正月，魏誅大將軍曹爽等，右將軍夏侯霸來降。夏四月…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p028",
+   "preview": "十三年，姜維復出西平，不克而還。"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p031",
+   "preview": "十六年春正月，大將軍費禕為魏降人郭循所殺於漢壽。夏四月，…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p032",
+   "preview": "十七年春正月，姜維還成都。大赦。夏六月，維復率眾出隴西。…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p033",
+   "preview": "十八年春，姜維還成都。夏，復率諸軍出狄道，與魏雍州剌史王…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p034",
+   "preview": "十九年春，進姜維位為大將軍，督戎馬，與鎮西將軍胡濟期會上…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p035",
+   "preview": "二十年，聞魏大將軍諸葛誕據壽春以叛，姜維復率眾出駱谷，至…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p036",
+   "preview": "景耀元年，姜維還成都。史官言景星見，於是大赦，改年。宦人…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p040",
+   "preview": "五年春正月，西河王琮卒。是歲，姜維復率眾出侯和，為鄧艾所…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p039",
+   "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  }
+ ],
+ "caoshuang": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p022",
+   "preview": "七年閏月，魏大將軍曹爽、夏侯玄等向漢中，鎮北大將軍王平拒…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p027",
+   "preview": "十二年春正月，魏誅大將軍曹爽等，右將軍夏侯霸來降。夏四月…"
+  }
+ ],
+ "wangping": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p022",
+   "preview": "七年閏月，魏大將軍曹爽、夏侯玄等向漢中，鎮北大將軍王平拒…"
+  }
+ ],
+ "xiahouba": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p027",
+   "preview": "十二年春正月，魏誅大將軍曹爽等，右將軍夏侯霸來降。夏四月…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p017",
+   "preview": "先主自葭萌還攻劉璋，召諸葛亮。亮率雲與張飛等俱溯江西上，…"
+  }
+ ],
+ "guoxun": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p031",
+   "preview": "十六年春正月，大將軍費禕為魏降人郭循所殺於漢壽。夏四月，…"
+  }
+ ],
+ "dengai": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p034",
+   "preview": "十九年春，進姜維位為大將軍，督戎馬，與鎮西將軍胡濟期會上…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p040",
+   "preview": "五年春正月，西河王琮卒。是歲，姜維復率眾出侯和，為鄧艾所…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p041",
+   "preview": "六年夏，魏大興徒從眾，命征西將軍鄧艾、鎮西將軍鍾會、雍州…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p038",
+   "preview": "瞻字思遠。建興十二年，亮出武功，與瑾書曰：「瞻今已八歲，…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p009",
+   "preview": "初，飛雄壯威猛，亞於關羽，魏謀臣程昱等咸稱羽、飛萬人之敵…"
+  }
+ ],
+ "huanghao": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p036",
+   "preview": "景耀元年，姜維還成都。史官言景星見，於是大赦，改年。宦人…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p039",
+   "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
+  }
+ ],
+ "zhangyi2": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p041",
+   "preview": "六年夏，魏大興徒從眾，命征西將軍鄧艾、鎮西將軍鍾會、雍州…"
+  }
+ ],
+ "liaohua": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p041",
+   "preview": "六年夏，魏大興徒從眾，命征西將軍鄧艾、鎮西將軍鍾會、雍州…"
+  }
+ ],
+ "zhugezhan": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p041",
+   "preview": "六年夏，魏大興徒從眾，命征西將軍鄧艾、鎮西將軍鍾會、雍州…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p009",
+   "preview": "初，飛雄壯威猛，亞於關羽，魏謀臣程昱等咸稱羽、飛萬人之敵…"
   }
  ],
  "xushu": [
@@ -1429,14 +2483,6 @@
    "preview": "先主至於夏口，亮曰：「事急矣，請奉命求救於孫將軍。」時權…"
   }
  ],
- "feiyi": [
-  {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p009",
-   "preview": "先帝創業未半而中道崩殂，今天下三分，益州疲弊，此誠危急存…"
-  }
- ],
  "dongyun": [
   {
    "chapterId": "shu-35",
@@ -1451,28 +2497,6 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p009",
    "preview": "先帝創業未半而中道崩殂，今天下三分，益州疲弊，此誠危急存…"
-  }
- ],
- "dengzhi": [
-  {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p013",
-   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
-  }
- ],
- "caozhen": [
-  {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p013",
-   "preview": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏…"
-  },
-  {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p014",
-   "preview": "冬，亮復出散關，圍陳倉，曹真拒之，亮糧盡而還。魏將軍王雙…"
   }
  ],
  "caorui": [
@@ -1495,22 +2519,6 @@
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p014",
    "preview": "冬，亮復出散關，圍陳倉，曹真拒之，亮糧盡而還。魏將軍王雙…"
-  }
- ],
- "guohuai": [
-  {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p014",
-   "preview": "冬，亮復出散關，圍陳倉，曹真拒之，亮糧盡而還。魏將軍王雙…"
-  }
- ],
- "simayi": [
-  {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p016",
-   "preview": "十二年春，亮悉大眾由斜谷出，以流馬運，據武功五丈原，與司…"
   }
  ],
  "zhonghui": [
@@ -1551,28 +2559,72 @@
    "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
   }
  ],
- "dengai": [
+ "zhangliao": [
   {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p038",
-   "preview": "瞻字思遠。建興十二年，亮出武功，與瑾書曰：「瞻今已八歲，…"
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p002",
+   "preview": "建安五年，曹公東征，先主奔袁紹。曹公禽羽以歸，拜為偏將軍…"
   }
  ],
- "jiangwei": [
+ "pangde2": [
   {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p039",
-   "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p005",
+   "preview": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p010",
+   "preview": "馬超字孟起，右扶風茂陵人也。父騰，靈帝末與邊章、韓遂等俱…"
   }
  ],
- "huanghao": [
+ "mifang": [
   {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p039",
-   "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p005",
+   "preview": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率…"
+  }
+ ],
+ "xuhuang": [
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p005",
+   "preview": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率…"
+  }
+ ],
+ "yanyan": [
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p007",
+   "preview": "張飛字益德，涿郡人也，少與關羽俱事先主。羽年長數歲，飛兄…"
+  },
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p018",
+   "preview": "評曰：關羽、張飛皆稱萬人之敵，為世虎臣。羽報效曹公，飛義…"
+  }
+ ],
+ "xuchu": [
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p011",
+   "preview": "超既統眾，遂與韓遂合從，及楊秋、李堪、成宜等相結，進軍至…"
+  }
+ ],
+ "jiaxu": [
+  {
+   "chapterId": "shu-36",
+   "chapterTitle": "蜀書六·關張馬黃趙傳",
+   "paragraphId": "shu-36-p011",
+   "preview": "超既統眾，遂與韓遂合從，及楊秋、李堪、成宜等相結，進軍至…"
   }
  ]
 }

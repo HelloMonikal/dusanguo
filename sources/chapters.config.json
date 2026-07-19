@@ -37,7 +37,7 @@
     "tocTitle": "蜀書-後主傳-卷三十三",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷33",
-    "enabled": false
+    "enabled": true
   },
   {
     "book": "sanguozhi",
@@ -64,7 +64,7 @@
     "tocTitle": "蜀書-關張馬黃趙傳-卷三十六",
     "tocGroup": "蜀書",
     "wikisourcePage": "三國志/卷36",
-    "enabled": false
+    "enabled": true
   },
   {
     "book": "sanguozhi",
