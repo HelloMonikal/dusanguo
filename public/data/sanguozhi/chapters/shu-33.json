@@ -2769,6 +2769,15 @@
     {
      "type": "person",
      "span": [
+      23,
+      25
+     ],
+     "name": "鍾會",
+     "refId": "zhonghui"
+    },
+    {
+     "type": "person",
+     "span": [
       30,
       33
      ],
@@ -3122,6 +3131,15 @@
      "birth": 207,
      "death": 271,
      "refId": "liushan"
+    },
+    {
+     "type": "person",
+     "span": [
+      133,
+      135
+     ],
+     "name": "鍾會",
+     "refId": "zhonghui"
     },
     {
      "type": "place",

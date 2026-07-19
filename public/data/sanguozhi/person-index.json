@@ -175,6 +175,12 @@
    "preview": "惟景元五年三月丁亥，皇帝臨軒，使太常嘉命劉禪為安樂縣公。…"
   },
   {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p001",
+   "preview": "先主甘皇后，沛人也。先主臨豫州，住小沛，納以為妾。先主數…"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p002",
@@ -527,6 +533,12 @@
    "chapterTitle": "蜀書一·劉二牧傳",
    "paragraphId": "shu-31-p011",
    "preview": "評曰：昔魏豹聞許負之言則納薄姬於室，劉歆見圖讖之文則名字…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p004",
+   "preview": "先主穆皇后，陳留人也。兄吳壹，少孤，壹父素與劉焉有舊，是…"
   }
  ],
  "zhanglu": [
@@ -875,6 +887,24 @@
    "preview": "後主諱禪，字公嗣，先主子也。建安二十四年，先主為漢中王，…"
   },
   {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p001",
+   "preview": "先主甘皇后，沛人也。先主臨豫州，住小沛，納以為妾。先主數…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p004",
+   "preview": "先主穆皇后，陳留人也。兄吳壹，少孤，壹父素與劉焉有舊，是…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p007",
+   "preview": "劉永字公壽，先主子，後主庶弟也。章武元年六月，使司徒靖立…"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p002",
@@ -1091,6 +1121,12 @@
    "chapterTitle": "蜀書二·先主傳",
    "paragraphId": "shu-32-p021",
    "preview": "平西將軍都亭侯臣馬超、左將軍（領）長史鎮軍將軍臣許靖、營…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p004",
+   "preview": "先主穆皇后，陳留人也。兄吳壹，少孤，壹父素與劉焉有舊，是…"
   },
   {
    "chapterId": "shu-35",
@@ -1763,6 +1799,12 @@
    "preview": "三年秋九月，追諡故將軍關羽、張飛、馬超、龐統、黃忠。"
   },
   {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p005",
+   "preview": "後主敬哀皇后，車騎將軍張飛長女也。章武元年，納為太子妃。…"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p002",
@@ -1823,6 +1865,12 @@
    "chapterTitle": "蜀書三·後主傳",
    "paragraphId": "shu-33-p039",
    "preview": "四年春三月，追諡故將軍趙雲。冬十月，大赦。"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p001",
+   "preview": "先主甘皇后，沛人也。先主臨豫州，住小沛，納以為妾。先主數…"
   },
   {
    "chapterId": "shu-35",
@@ -2405,6 +2453,48 @@
    "chapterTitle": "蜀書三·後主傳",
    "paragraphId": "shu-33-p048",
    "preview": "評曰：後主任賢相則為循理之君，惑閹堅則為昏暗之後，傳曰『…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p001",
+   "preview": "先主甘皇后，沛人也。先主臨豫州，住小沛，納以為妾。先主數…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p004",
+   "preview": "先主穆皇后，陳留人也。兄吳壹，少孤，壹父素與劉焉有舊，是…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p005",
+   "preview": "後主敬哀皇后，車騎將軍張飛長女也。章武元年，納為太子妃。…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p006",
+   "preview": "後主張皇后，前后敬哀之妹也。建興十五年，入為貴人。延熙元…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p007",
+   "preview": "劉永字公壽，先主子，後主庶弟也。章武元年六月，使司徒靖立…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p008",
+   "preview": "劉理字奉孝，亦後主庶弟也，與永異母。章武元年六月，使司徒…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p009",
+   "preview": "後主太子璿，字文衡。母王貴人，本敬哀張皇后侍人也。延熙元…"
   },
   {
    "chapterId": "shu-35",
@@ -3039,10 +3129,54 @@
    "preview": "景耀元年，姜維還成都。史官言景星見，於是大赦，改年。宦人…"
   },
   {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p007",
+   "preview": "劉永字公壽，先主子，後主庶弟也。章武元年六月，使司徒靖立…"
+  },
+  {
    "chapterId": "shu-35",
    "chapterTitle": "蜀書五·諸葛亮傳",
    "paragraphId": "shu-35-p039",
    "preview": "董厥者，丞相亮時為府令史，亮稱之曰：「董令史，良士也。吾…"
+  },
+  {
+   "chapterId": "shu-44",
+   "chapterTitle": "蜀書十四·蔣琬費禕姜維傳",
+   "paragraphId": "shu-44-p021",
+   "preview": "五年，維率眾出漢、侯和，為鄧艾所破，還住沓中。維本羈旅托…"
+  }
+ ],
+ "zhonghui": [
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p041",
+   "preview": "六年夏，魏大興徒從眾，命征西將軍鄧艾、鎮西將軍鍾會、雍州…"
+  },
+  {
+   "chapterId": "shu-33",
+   "chapterTitle": "蜀書三·後主傳",
+   "paragraphId": "shu-33-p043",
+   "preview": "是日，北地王諶傷國之亡，先殺妻子，次以自殺。紹、良與艾相…"
+  },
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p009",
+   "preview": "後主太子璿，字文衡。母王貴人，本敬哀張皇后侍人也。延熙元…"
+  },
+  {
+   "chapterId": "shu-35",
+   "chapterTitle": "蜀書五·諸葛亮傳",
+   "paragraphId": "shu-35-p021",
+   "preview": "景耀六年春，詔為亮立廟於沔陽。秋，魏鎮西將軍鐘會征蜀，至…"
+  },
+  {
+   "chapterId": "shu-44",
+   "chapterTitle": "蜀書十四·蔣琬費禕姜維傳",
+   "paragraphId": "shu-44-p008",
+   "preview": "子斌嗣，為綏武將軍、漢城護軍。魏大將軍鐘會至漢城，與斌書…"
   },
   {
    "chapterId": "shu-44",
@@ -3097,6 +3231,36 @@
    "chapterTitle": "蜀書十四·蔣琬費禕姜維傳",
    "paragraphId": "shu-44-p021",
    "preview": "五年，維率眾出漢、侯和，為鄧艾所破，還住沓中。維本羈旅托…"
+  }
+ ],
+ "ganhuanghou": [
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p001",
+   "preview": "先主甘皇后，沛人也。先主臨豫州，住小沛，納以為妾。先主數…"
+  }
+ ],
+ "muhuanghou": [
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p004",
+   "preview": "先主穆皇后，陳留人也。兄吳壹，少孤，壹父素與劉焉有舊，是…"
+  }
+ ],
+ "sunfuren": [
+  {
+   "chapterId": "shu-34",
+   "chapterTitle": "蜀書四·二主妃子傳",
+   "paragraphId": "shu-34-p004",
+   "preview": "先主穆皇后，陳留人也。兄吳壹，少孤，壹父素與劉焉有舊，是…"
+  },
+  {
+   "chapterId": "shu-37",
+   "chapterTitle": "蜀書七·龐統法正傳",
+   "paragraphId": "shu-37-p006",
+   "preview": "鄭度說璋曰：「左將軍縣軍襲我，兵不滿萬，士眾未附，野谷是…"
   }
  ],
  "xushu": [
@@ -3189,26 +3353,6 @@
    "chapterTitle": "蜀書十四·蔣琬費禕姜維傳",
    "paragraphId": "shu-44-p015",
    "preview": "姜維，字伯約，天水冀人也。少孤，與母居，好鄭氏學。仕郡上…"
-  }
- ],
- "zhonghui": [
-  {
-   "chapterId": "shu-35",
-   "chapterTitle": "蜀書五·諸葛亮傳",
-   "paragraphId": "shu-35-p021",
-   "preview": "景耀六年春，詔為亮立廟於沔陽。秋，魏鎮西將軍鐘會征蜀，至…"
-  },
-  {
-   "chapterId": "shu-44",
-   "chapterTitle": "蜀書十四·蔣琬費禕姜維傳",
-   "paragraphId": "shu-44-p008",
-   "preview": "子斌嗣，為綏武將軍、漢城護軍。魏大將軍鐘會至漢城，與斌書…"
-  },
-  {
-   "chapterId": "shu-44",
-   "chapterTitle": "蜀書十四·蔣琬費禕姜維傳",
-   "paragraphId": "shu-44-p021",
-   "preview": "五年，維率眾出漢、侯和，為鄧艾所破，還住沓中。維本羈旅托…"
   }
  ],
  "liucong": [
@@ -3324,14 +3468,6 @@
   }
  ],
  "ganning": [
-  {
-   "chapterId": "shu-37",
-   "chapterTitle": "蜀書七·龐統法正傳",
-   "paragraphId": "shu-37-p006",
-   "preview": "鄭度說璋曰：「左將軍縣軍襲我，兵不滿萬，士眾未附，野谷是…"
-  }
- ],
- "sunfuren": [
   {
    "chapterId": "shu-37",
    "chapterTitle": "蜀書七·龐統法正傳",

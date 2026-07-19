@@ -89,7 +89,7 @@ function parseDocument(raw) {
     raw
       .replace(/^\{\{header[\s\S]*?\n\}\}\n/, '')
       .replace(/<!--[\s\S]*?-->/g, '')
-      .replace(/^==.*==[ \t　]*$/gm, '')
+      .replace(/^=+.*=+[ \t　]*$/gm, '') // 各级节标题（= 标题 = / == 标题 ==）
       .replace(/^__\w+__$/gm, ''),
   )
 
