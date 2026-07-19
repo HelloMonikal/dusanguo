@@ -2718,6 +2718,15 @@
      "birth": 176,
      "death": 220,
      "refId": "fazheng"
+    },
+    {
+     "type": "person",
+     "span": [
+      53,
+      55
+     ],
+     "name": "荀彧",
+     "note": "曹操首席谋臣，尚书令，人称「荀令君」，主持朝政选举，海内名士多与之通信"
     }
    ],
    "sentences": [
