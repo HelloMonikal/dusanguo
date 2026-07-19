@@ -1,17 +1,62 @@
 [
  {
   "id": "wei-01-node",
-  "title": "魏書-武帝紀（節選）-卷一",
-  "chapterId": "wei-01"
+  "title": "武帝紀（節選）-卷一",
+  "chapterId": "wei-01",
+  "group": "魏書"
+ },
+ {
+  "id": "shu-31-node",
+  "title": "劉二牧傳-卷三十一",
+  "chapterId": "shu-31",
+  "group": "蜀書"
  },
  {
   "id": "shu-32-node",
-  "title": "蜀書-先主傳-卷三十二",
-  "chapterId": "shu-32"
+  "title": "先主傳-卷三十二",
+  "chapterId": "shu-32",
+  "group": "蜀書"
+ },
+ {
+  "id": "shu-33-node",
+  "title": "後主傳-卷三十三",
+  "chapterId": "shu-33",
+  "group": "蜀書"
+ },
+ {
+  "id": "shu-34-node",
+  "title": "二主妃子傳-卷三十四",
+  "chapterId": "shu-34",
+  "group": "蜀書"
  },
  {
   "id": "shu-35-node",
-  "title": "蜀書-諸葛亮傳-卷三十五",
-  "chapterId": "shu-35"
+  "title": "諸葛亮傳-卷三十五",
+  "chapterId": "shu-35",
+  "group": "蜀書"
+ },
+ {
+  "id": "shu-36-node",
+  "title": "關張馬黃趙傳-卷三十六",
+  "chapterId": "shu-36",
+  "group": "蜀書"
+ },
+ {
+  "id": "shu-37-node",
+  "title": "龐統法正傳-卷三十七",
+  "chapterId": "shu-37",
+  "group": "蜀書"
+ },
+ {
+  "id": "shu-38-node",
+  "title": "許糜孫簡伊秦傳-卷三十八",
+  "chapterId": "shu-38",
+  "group": "蜀書"
+ },
+ {
+  "id": "shu-44-node",
+  "title": "蔣琬費禕姜維傳-卷四十四",
+  "chapterId": "shu-44",
+  "group": "蜀書"
  }
 ]
