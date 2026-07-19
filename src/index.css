@@ -233,6 +233,76 @@ a {
   font-weight: 600;
 }
 
+.toc-tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0 0.25rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.toc-tab {
+  flex: 1;
+  padding: 0.3rem 0.5rem;
+  text-align: center;
+  font-size: 0.92rem;
+  color: var(--ink-weak);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.toc-tab:hover {
+  color: var(--ink);
+}
+
+.toc-tab.active {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- 更新日志 ---------- */
+
+.updates-log {
+  margin: 0.75rem 0.35rem 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  color: var(--ink-weak);
+}
+
+.updates-log summary {
+  cursor: pointer;
+  padding: 0.15rem 0.4rem;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.updates-log summary:hover {
+  background: var(--paper-dim);
+}
+
+.updates-log ul {
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0 0.4rem;
+}
+
+.updates-log li {
+  margin-bottom: 0.45rem;
+  line-height: 1.5;
+}
+
+.updates-date {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--ink-weak);
+  opacity: 0.8;
+}
+
+.updates-note {
+  color: var(--ink);
+}
+
 /* ---------- 段落 ---------- */
 
 .paragraph {

@@ -307,21 +307,40 @@ for (const cfg of CHAPTERS) {
   )
 }
 
-// ---------- toc.json（按配置自动生成，仅 enabled 章节；扁平列表，条目自带部名） ----------
+// ---------- toc.json（按配置自动生成，仅 enabled 章节；扁平列表 + group 分部） ----------
 
 if (!draftMode) {
   for (const book of bookChapters.keys()) {
     const nodes = ALL_CHAPTERS.filter((cfg) => cfg.book === book && cfg.enabled).map(
       (cfg) => ({
         id: `${cfg.chapterId}-node`,
-        title: cfg.tocTitle,
+        // 有分部时条目去掉「部名-」前缀，由 group 承担分部信息（UI 渲染为 tab）
+        title:
+          cfg.tocGroup && cfg.tocTitle.startsWith(`${cfg.tocGroup}-`)
+            ? cfg.tocTitle.slice(cfg.tocGroup.length + 1)
+            : cfg.tocTitle,
         chapterId: cfg.chapterId,
+        ...(cfg.tocGroup ? { group: cfg.tocGroup } : {}),
       }),
     )
     writeFileSync(
       path.join(ROOT, 'public/data', book, 'toc.json'),
       JSON.stringify(nodes, null, 1),
     )
+  }
+
+  // updates.json：书籍更新日志（sources/updates.json 按书分组）
+  const updatesPath = path.join(ROOT, 'sources/updates.json')
+  if (existsSync(updatesPath)) {
+    const updates = JSON.parse(readFileSync(updatesPath, 'utf8'))
+    for (const book of bookChapters.keys()) {
+      if (updates[book]) {
+        writeFileSync(
+          path.join(ROOT, 'public/data', book, 'updates.json'),
+          JSON.stringify(updates[book], null, 1),
+        )
+      }
+    }
   }
 }
 

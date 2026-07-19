@@ -12,8 +12,16 @@ import {
   loadPersonIndex,
   loadPersons,
   loadToc,
+  loadUpdates,
 } from '../lib/data'
-import type { BookConfig, Chapter, Person, PersonIndex, TocNode } from '../lib/schema'
+import type {
+  BookConfig,
+  BookUpdate,
+  Chapter,
+  Person,
+  PersonIndex,
+  TocNode,
+} from '../lib/schema'
 import { useFavorites, useReaderSettings, useReadingProgress } from '../lib/settings'
 
 export default function Reader() {
@@ -26,6 +34,7 @@ export default function Reader() {
   const [chapter, setChapter] = useState<Chapter | null>(null)
   const [persons, setPersons] = useState<Person[]>([])
   const [personIndex, setPersonIndex] = useState<PersonIndex>({})
+  const [updates, setUpdates] = useState<BookUpdate[]>([])
   const [openPersonId, setOpenPersonId] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [tocOpen, setTocOpen] = useState(true)
@@ -48,6 +57,7 @@ export default function Reader() {
     )
     loadPersons(bookId).then(setPersons)
     loadPersonIndex(bookId).then(setPersonIndex)
+    loadUpdates(bookId).then(setUpdates)
   }, [bookId])
 
   const chapters = useMemo(() => (toc ? flattenChapters(toc) : []), [toc])
@@ -191,6 +201,19 @@ export default function Reader() {
               activePath={tocPath.map((node) => node.id)}
               onSelect={(id) => navigate(`/book/${bookId}/${id}`)}
             />
+            {updates.length > 0 && (
+              <details className="updates-log">
+                <summary>更新日志</summary>
+                <ul>
+                  {updates.map((u, i) => (
+                    <li key={i}>
+                      <span className="updates-date">{u.date}</span>
+                      <span className="updates-note">{u.note}</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
           </aside>
         )}
 

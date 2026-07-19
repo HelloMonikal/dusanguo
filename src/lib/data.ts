@@ -1,6 +1,7 @@
 import type {
   BookConfig,
   BookIndexEntry,
+  BookUpdate,
   Chapter,
   Person,
   PersonIndex,
@@ -48,6 +49,15 @@ export async function loadPersonIndex(bookId: string): Promise<PersonIndex> {
     return await fetchJson(`/${bookId}/person-index.json`)
   } catch {
     return {}
+  }
+}
+
+/** v2.1：书籍更新日志；无此文件时返回空数组 */
+export async function loadUpdates(bookId: string): Promise<BookUpdate[]> {
+  try {
+    return await fetchJson(`/${bookId}/updates.json`)
+  } catch {
+    return []
   }
 }
 

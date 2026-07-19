@@ -66,9 +66,44 @@ function TocBranch({
 }
 
 export default function TocTree({ toc, currentChapterId, activePath, onSelect }: Props) {
+  // 顶层节点都带 group 时按分部（魏書/蜀書/吳書…）渲染 tab
+  const groups = toc.every((node) => node.group)
+    ? [...new Set(toc.map((node) => node.group!))]
+    : []
+  const tabbed = groups.length > 1
+  const currentGroup = currentChapterId
+    ? toc.find((node) => node.chapterId === currentChapterId)?.group
+    : undefined
+  const [activeGroup, setActiveGroup] = useState(currentGroup ?? groups[0])
+
+  // 切换章节（含跨部前后翻页）时跟随其所在部
+  useEffect(() => {
+    if (currentGroup) setActiveGroup(currentGroup)
+  }, [currentGroup])
+
+  const visible = tabbed
+    ? toc.filter((node) => node.group === (activeGroup ?? groups[0]))
+    : toc
+
   return (
     <nav className="toc-tree">
-      {toc.map((node) => (
+      {tabbed && (
+        <div className="toc-tabs" role="tablist">
+          {groups.map((group) => (
+            <button
+              key={group}
+              type="button"
+              role="tab"
+              aria-selected={group === (activeGroup ?? groups[0])}
+              className={`toc-tab${group === (activeGroup ?? groups[0]) ? ' active' : ''}`}
+              onClick={() => setActiveGroup(group)}
+            >
+              {group}
+            </button>
+          ))}
+        </div>
+      )}
+      {visible.map((node) => (
         <TocBranch
           key={node.id}
           node={node}

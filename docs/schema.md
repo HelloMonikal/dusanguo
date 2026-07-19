@@ -1,6 +1,6 @@
 # 书籍数据包 Schema 规范
 
-**当前版本：v2**（对应 `book.json` 的 `schemaVersion: 2`；阅读器向后兼容 v1——v2 新字段均为可选）
+**当前版本：v2.1**（对应 `book.json` 的 `schemaVersion: 2`；阅读器向后兼容 v1——v2/v2.1 新字段与新文件均为可选）
 
 TS 类型定义：`src/lib/schema.ts`（与本文档同步维护；改动 schema 必须同时更新两处并在文末记录变更）。
 
@@ -15,6 +15,7 @@ public/data/
     chapters/<chapterId>.json  # 章节（按需加载）
     persons.json             # v2：人物库
     person-index.json        # v2：人物出现位置索引（生成物）
+    updates.json             # v2.1：更新日志（可选）
 ```
 
 **章节 id 规范**：`<部>-<两位全书卷号>`，如 `wei-01`（魏书卷一）、`shu-35`（蜀书五 = 全书卷三十五）。
@@ -63,6 +64,27 @@ public/data/
 ```
 
 约束：节点 id 全书唯一；`chapterId` 必须有对应章节文件；阅读顺序 = 树的先序遍历。
+
+**v2.1 `group`（可选）**：顶层节点可带分部名（如「魏書」「蜀書」）。当**所有**顶层节点都带 `group` 时，阅读器把目录渲染为分部 tab（tab 栏 + 当前分部的章节列表）；否则忽略该字段按普通树渲染。
+
+```jsonc
+[
+  { "id": "wei-01-node", "title": "武帝紀-卷一", "chapterId": "wei-01", "group": "魏書" },
+  { "id": "shu-32-node", "title": "先主傳-卷三十二", "chapterId": "shu-32", "group": "蜀書" }
+]
+```
+
+## updates.json —— 更新日志（v2.1，可选）
+
+书籍内容更新记录，数组按时间倒序（最新在前），阅读器在目录侧栏下方折叠展示；文件缺失时不展示。
+
+```jsonc
+[
+  { "date": "2026-07-19", "note": "卷33 後主傳、卷36 關張馬黃趙傳上线" }
+]
+```
+
+来源：`sources/updates.json`（按 bookId 分组），由导入脚本拷贝到各书数据包。
 
 ## chapters/<chapterId>.json —— 章节
 
@@ -161,5 +183,6 @@ public/data/
 
 ## 变更记录
 
+- **v2.1**（2026-07-19）：新增 `TocNode.group` 分部字段（目录分部 tab）与 `updates.json` 更新日志文件。均可选，不影响 `schemaVersion`，阅读器向后兼容。
 - **v2**（2026-07-12）：新增 `Paragraph.sentences` 句级对齐、`Entity.refId`、`persons.json` 人物库、`person-index.json` 出现位置索引；章节 id 统一为全书卷号（`shu-05` → `shu-35`）。新字段全部可选，阅读器向后兼容 v1。
 - **v1**（2026-07-12）：初版。

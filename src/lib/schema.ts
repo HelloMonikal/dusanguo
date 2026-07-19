@@ -42,6 +42,15 @@ export interface TocNode {
   /** 叶子节点指向章节文件名（不含 .json） */
   chapterId?: string
   children?: TocNode[]
+  /** v2.1：分部名（如「魏書」「蜀書」）；顶层节点都带 group 时目录渲染为分部 tab */
+  group?: string
+}
+
+/** v2.1：书籍更新日志条目（public/data/<book>/updates.json 为数组，新在前） */
+export interface BookUpdate {
+  /** ISO 日期，如 2026-07-19 */
+  date: string
+  note: string
 }
 
 export type EntityType = 'person' | 'place' | 'office' | (string & {})
